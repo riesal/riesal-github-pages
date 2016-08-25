@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>An Easy Win For A Faster Site on Muhammad Fahrizal Rahman </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://riesal.github.io/tags/an-easy-win-for-a-faster-site/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Mon, 25 May 2015 00:05:27 &#43;0000</updated>
+    
+    <item>
+      <title>Image Optimization, An Easy Win For A Faster Site</title>
+      <link>https://riesal.github.io/2015/05/image-optimization-an-easy-win-for-a-faster-site/</link>
+      <pubDate>Mon, 25 May 2015 00:05:27 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2015/05/image-optimization-an-easy-win-for-a-faster-site/</guid>
+      <description>
+
+&lt;p&gt;Website speed optimization can be a complex and technical practice, but the non-techies out there will be happy to learn that one of the biggest problems is actually easy for the layperson to solve.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-problem-with-images&#34;&gt;The Problem With Images&lt;/h2&gt;
+
+&lt;p&gt;Image Optimization, An Easy Win For A Faster Site. Images are typically the one of the biggest drains on page load time. Even with caching and a CDN, an unoptimized image will still drag down your page loading time. But, as the website owner, images are completely under your control, so if you can get a handle on how to work with and optimize images, you can have a great impact on the speed of your site.&lt;/p&gt;
+
+&lt;p&gt;Based on the websites that I look at during my Intispace customer support duties, I see that images contribute, on average, about 30% of the total page load time. Often this is the single largest factor of the loading time. In extreme cases, it could be closer to 60% of the loading time.&lt;/p&gt;
+
+&lt;p&gt;Here’s an example of what un-optimized images will do to your site:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;img class=&#34;aligncenter size-full wp-image-431  lazyautosizes lazyloaded&#34; src=&#34;http://cdn.wp-rocket.me/wp-content/uploads/4/pingdom-image-slow-site.jpg&#34; alt=&#34;Large Images slow down your website&#34; width=&#34;500&#34; height=&#34;108&#34; data-lazy-src=&#34;http://cdn.wp-rocket.me/wp-content/uploads/4/pingdom-image-slow-site.jpg&#34; /&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The load time is 12 seconds and the size of the page is 8MB. Of those 8MB, images account for 6.7MB. This is out of control!&lt;/p&gt;
+
+&lt;p&gt;The number of http requests is commonly cited as a factor in load time, and while it is important, ultimately it’s the page size that is the real indicator of speed or slowness. You can have a small number of http requests, but if those requests are summoning giant images, you will have a problem on your hands.&lt;/p&gt;
+
+&lt;h3 id=&#34;understanding-dimensions-and-file-size&#34;&gt;Understanding Dimensions and File Size&lt;/h3&gt;
+
+&lt;p&gt;The dimensions of the image, i.e. how much space on the screen an image takes up, are measured in pixels and while they do not 100% dictate file size, they are related. The larger the dimensions of your image, the larger the file size.&lt;/p&gt;
+
+&lt;p&gt;File size is measured in kilobytes (KB) and megabytes (MB)&lt;/p&gt;
+
+&lt;p&gt;1MB = 1000KB&lt;/p&gt;
+
+&lt;p&gt;To give you a point of reference, the main content column of this blog is 796 pixels wide.&lt;/p&gt;
+
+&lt;p&gt;If you take a photo with your smartphone, depending on your settings, that photo could be in the region of 2500 pixels wide (or even more) with a filesize of 3MB (or 3000KB). If I were to take a photo with my phone and upload it to this blog without any editing, I’m going to be uploading a file that is about 3 times as big as it needs to be – a total waste of resources and a drag on page load.&lt;/p&gt;
+
+&lt;p&gt;So while snapping phone pics and uploading to your blog might be simple, it creates a real problem if you want a fast site,  by adding tons of unnecessary weight.&lt;/p&gt;
+
+&lt;h3 id=&#34;resizing-images&#34;&gt;Resizing Images&lt;/h3&gt;
+
+&lt;p&gt;So the first thing you need to do is resize your images to the correct size for your site. For blog images, figure out how wide your blog’s content area is  and never upload an image wider than that. If it’s going to be used in a slider, make sure you determine the dimensions of the slider first.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How do you know how wide your content area is?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If you know how to use the developer tools built in to Chrome or Firefox, you can use that. But if that sounds scary there are simpler tools available.&lt;/p&gt;
+
+&lt;p&gt;If you’re on a Mac, there is a screen capture tool, Grab, already built-in, and when you outline an area on the screen it will tell you the pixels. &lt;a href=&#34;https://www.aeyoun.com/posts/osx-screen-shot-ruler.html&#34; target=&#34;_blank&#34;&gt;This article explains in more detail.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Or you can  &lt;a href=&#34;https://chrome.google.com/webstore/detail/page-ruler/jlpkojjdgbllmedoapgfodplfhcbnbpn/related?hl=en&#34; target=&#34;_blank&#34;&gt;install the easy Page Ruler addon  for Chrome&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you’ve figured out what dimensions your images should be, you can use any of the below tools to resize your images accordingly:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Resizing Applications&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Photoshop&lt;/li&gt;
+&lt;li&gt;GIMP – free, Windows &amp;amp; Mac&lt;/li&gt;
+&lt;li&gt;Irfan View- free for Windows&lt;/li&gt;
+&lt;li&gt;Preview for Mac – it’s already installed!&lt;/li&gt;
+&lt;li&gt;Developers on Macs can &lt;a href=&#34;https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/sips.1.html&#34; target=&#34;_blank&#34;&gt;check out sips, a command line tool&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Online Tools For Resizing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Picmonkey.com&lt;/li&gt;
+&lt;li&gt;Pixlr.com (also has mobile app)&lt;/li&gt;
+&lt;li&gt;Fotor.com (also has mobile app)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It doesn’t matter which one you use – all you need to do is locate the resize feature. You’ll be able to enter the desired pixel width and the application will make sure the image stays in proportion by adjusting the height automatically.&lt;/p&gt;
+
+&lt;h4 id=&#34;image-formats&#34;&gt;Image Formats&lt;/h4&gt;
+
+&lt;p&gt;Images on the web should be saved in either .jpg, .png, or possibly .gif&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;JPEGs&lt;/strong&gt; are best used for photographs and general purpose images where you do not need any transparency. You can compress them easily and get a smaller filesize suitable for the web.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;PNGs&lt;/strong&gt; will often generate a larger filesize so should only be used when you have an image that requires transparency.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GIFs&lt;/strong&gt; are less frequently used. They have a limited range of color so can only be used for very simple images, but can produce a small filesize.&lt;/p&gt;
+
+&lt;h3 id=&#34;compressing-images&#34;&gt;Compressing Images&lt;/h3&gt;
+
+&lt;p&gt;So we’ve dealt with the physical dimensions of the image, now let’s deal with the ‘weight’ of the image. We want to compress the image to make it as lean and fast-loading as possible. &lt;strong&gt;The goal is to reduce the filesize&lt;/strong&gt;. There isn’t a magic number as to what each image should be, since it depends on how the image will be used. Images being used in a hero banner or slider will be bigger, but if you have a few of them, I’d aim to get each one down to 100KB or less.&lt;/p&gt;
+
+&lt;p&gt;Small images that are going to be used for thumbnails, logos etc will be much much smaller. The logo at the top of this blog, for example, is 3.8KB.&lt;/p&gt;
+
+&lt;p&gt;With compression there may be a slight loss in quality, so you’re looking for a balance between quality and file size. But always remember that the smaller the filesize, the faster the load time will be.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Applications&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Photoshop – make sure to use the &lt;em&gt;Save For Web&lt;/em&gt; option&lt;/li&gt;
+&lt;li&gt;GIMP&lt;/li&gt;
+&lt;li&gt;ImageOptim (Mac)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Online Tools&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Compressor.io – make sure to choose the ‘lossy’ option for the biggest size reduction.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;wordpress-plugins&#34;&gt;WordPress Plugins&lt;/h3&gt;
+
+&lt;p&gt;It’s preferable to resize and compress your image before you upload it to WordPress.&lt;/p&gt;
+
+&lt;p&gt;However, if your site is already live, you will need to deal with the images that are already there.&lt;/p&gt;
+
+&lt;p&gt;For the crucial images such as logos, headers and others that load on every page of your site, it would be best to make new versions of the images as described above, then install the &lt;strong&gt;&lt;a href=&#34;https://wordpress.org/plugins/enable-media-replace/&#34; target=&#34;_blank&#34;&gt;Enable Media Replace plugin&lt;/a&gt;&lt;/strong&gt;. This will allow you to simply replace existing images in your media library with the new, optimized ones, without breaking any links.&lt;/p&gt;
+
+&lt;p&gt;For the other images sitting in your media library, where it would be unrealistic to go through and fix them all individually,there are a few handy plugins that will help you.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://wordpress.org/plugins/ewww-image-optimizer/&#34; target=&#34;_blank&#34;&gt;EWWW Image Optimizer&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This plugin can go through your existing media library and compress everything in bulk.&lt;/p&gt;
+
+&lt;p&gt;If you build sites for clients or have a site with multiple users where you cannot ensure that everyone is using best practices and uploading nicely optimized images, the below plugins will help mitigate that.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://wordpress.org/plugins/imsanity/&#34; target=&#34;_blank&#34;&gt;Imsanity&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You can determine the settings so that if someone uploads a gigantic image, it will automatically be reduced to maximum size of your choosing. No more 4000 pixel images clogging up the media library!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://wordpress.org/plugins/tiny-compress-images/&#34; target=&#34;_blank&#34;&gt;Compress JPEG &amp;amp; PNG Images&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once set up, this uses the TinyPNG API to automatically compress images on upload. You can get a free API key for up to 500 images/month which would be plenty for the average blogger.&lt;/p&gt;
+
+&lt;p&gt;If you need to benchmark the speed of your site, or do before/after comparisons with images after optimizing, &lt;a title=&#34;How To Correctly Measure Your Website’s Page Load Time&#34; href=&#34;http://blog.intispace.com/?p=33279&#34; target=&#34;_blank&#34;&gt;follow this guide on how to properly measure the load time of your site&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

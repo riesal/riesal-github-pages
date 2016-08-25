@@ -1,0 +1,139 @@
+---
+title: Everything Entrepreneurs Should Know About Bookkeeping – Part 2
+author: riesal
+layout: post
+date: 2016-07-05T04:26:43+00:00
+url: /2016/07/everything-entrepreneurs-know-bookkeeping-part-2/
+dsq_thread_id:
+  - 4961390203
+categories:
+  - Bookkeeping
+  - Business
+tags:
+  - bookkeeping 101
+  - bookkeeping guide
+
+---
+The question of whether or not you should do your own bookkeeping really comes down to a couple of things.
+
+<div id="block-yui_3_17_2_5_1459961244674_59168" class="sqs-block html-block sqs-block-html" data-block-type="2">
+  <div class="sqs-block-content">
+    <p>
+      Bookkeeping is an extremely time consuming and tedious task. If you are in the early stages, you are most likely stretching yourself as it is&#8211;perhaps trying to manage your marketing, sales, PR, customer service, and inventory all at the same time. As a startup, we understand the &#8220;hustle&#8221; mentality.<!--more-->
+    </p>
+    
+    <p>
+      Does your accounting experience boil down to a couple of college courses? Have you ever taken the time to get to the state and federal tax codes that apply to you? Are you familiar with the term &#8220;nexus&#8221;?
+    </p>
+    
+    <p>
+      Many business owners think they have what it takes to do their own books, and they very well might. But chances are, most business owners overestimate their &#8220;expertise&#8221; when it comes to proper accounting.
+    </p>
+    
+    <p>
+      <strong>Side note: </strong>On a philosophical level, you also need to ask yourself, what makes you happiest. Why did you start your business? Was it to categorize transactions, or was it to fulfill a need, explore your passions, share your gifts, better a product, or change the world?
+    </p>
+    
+    <p>
+      Chances are that you didn&#8217;t become a business owner so you could practice bookkeeping. Hiring a bookkeeper will allow you to focus on the real reason you decided to put blood and tears into your product.
+    </p>
+    
+    <h4>
+      What are the Different Bookkeeping Services Available?
+    </h4>
+  </div>
+</div>
+
+<!--more-->
+
+<div id="block-yui_3_17_2_5_1459961244674_28747" class="sqs-block image-block sqs-block-image" data-block-type="5">
+  <div id="yui_3_17_2_1_1467691392444_413" class="sqs-block-content">
+    <div id="yui_3_17_2_1_1467691392444_412" class="image-block-outer-wrapper layout-caption-below ">
+      <div id="yui_3_17_2_1_1467691392444_411" class="intrinsic">
+        <div id="yui_3_17_2_1_1467691392444_410" class="image-block-wrapper " data-description="">
+          <img class="thumb-image loaded" src="http://static1.squarespace.com/static/562f959fe4b022e56e74eb49/t/57056a37e3214010cd5376e6/1459972843450/Old+School?format=750w" alt="Old School" data-image-resolution="750w" data-src="http://static1.squarespace.com/static/562f959fe4b022e56e74eb49/t/57056a37e3214010cd5376e6/1459972843450/Old+School" data-image="http://static1.squarespace.com/static/562f959fe4b022e56e74eb49/t/57056a37e3214010cd5376e6/1459972843450/Old+School" data-image-dimensions="550x412" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="57056a37e3214010cd5376e6" data-type="image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="block-yui_3_17_2_5_1459961244674_28970" class="sqs-block html-block sqs-block-html" data-block-type="2">
+  <div class="sqs-block-content">
+    <h4>
+      <strong>The O.G. or “Traditional” Bookkeeping Services: Accounting Firms</strong>
+    </h4>
+    
+    <p>
+      The most traditional method of bookkeeping is to hire an accountant or accounting firm. (We’re talking local mom and pop shops and freelancers.) These guys offer great benefits over the DIY self method—like the fact that you’ll barely have to lift a finger and you’ll also be privy to expert insight (pending their qualifications of course).
+    </p>
+    
+    <p>
+      Of course there are also some drawbacks with these bookkeeping services, such as higher fees and slow turn around times. Many of these institutions charge high hourly fees for consultations which can make it difficult to set a steady course for your monthly budget, not to mention their services can often be “behind the times” in terms of integrating technology.
+    </p>
+    
+    <p>
+      When it comes to the traditional method, business owners will have to consider whether or not they want to hire an in-house bookkeeper or an external accounting firm. Both methods can be expensive with hourly consulting fees and salary/benefit considerations for in-house hires. In-house accountants can be a solid option if you own a large operation and need constant oversight. Smaller businesses however, might find that the costs don’t outweigh the rewards when it comes to hiring a full-time accountant.
+    </p>
+  </div>
+</div>
+
+<div id="block-yui_3_17_2_5_1459961244674_7517" class="sqs-block image-block sqs-block-image" data-block-type="5">
+  <div id="yui_3_17_2_1_1467691392444_428" class="sqs-block-content">
+    <div id="yui_3_17_2_1_1467691392444_427" class="image-block-outer-wrapper layout-caption-below ">
+      <div id="yui_3_17_2_1_1467691392444_426" class="intrinsic">
+        <div id="yui_3_17_2_1_1467691392444_425" class="image-block-wrapper " data-description="">
+          <img class="thumb-image loaded" src="http://static1.squarespace.com/static/562f959fe4b022e56e74eb49/t/570560e507eaa0359877edb1/1459970750370/DIY+Tools?format=750w" alt="DIY Tools" data-image-resolution="750w" data-src="http://static1.squarespace.com/static/562f959fe4b022e56e74eb49/t/570560e507eaa0359877edb1/1459970750370/DIY+Tools" data-image="http://static1.squarespace.com/static/562f959fe4b022e56e74eb49/t/570560e507eaa0359877edb1/1459970750370/DIY+Tools" data-image-dimensions="550x446" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="570560e507eaa0359877edb1" data-type="image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="block-yui_3_17_2_5_1459961244674_7762" class="sqs-block html-block sqs-block-html" data-block-type="2">
+  <div class="sqs-block-content">
+    <h4>
+      <strong>The &#8220;Semi-Traditional” Bookkeeping Service: DIY Software</strong>
+    </h4>
+    
+    <p>
+      DIY software is an increasingly popular option, giving business owners a great UI to track their finances. Companies like <a href="http://quickbooks.intuit.com">Quickbooks</a> provide robust software that can help facilitate advanced accounting functions. Not only are many of these types of tools extremely helpful, they can also save money when it comes to hiring a traditional accountant. Although this is a great option for <em>accountants</em>, it may not be optimal for business owners.
+    </p>
+    
+    <p>
+      Having a good piece of software doesn’t make you knowledgeable about the <a href="http://www.pajak.net/info/indonesian_tax_system.htm">Indonesia tax code</a>, regulations or requirements. Business owners can miss out on deductions, disqualify themselves as a compliant business, and face IRS auditing through improper tax filing. Having simply taken an accounting class in college is no substitute for the wealth of knowledge an accountant brings to the table.
+    </p>
+    
+    <p>
+      Even if you feel confident enough in your accounting, there is still the consideration of time. Anyone who has started a business knows that they will soon find themselves being pulled in lot’s of different directions. Bookkeeping is a time consuming task—business owners need to ask if reconciling transactions is the best use of their time. A more honest labeling of &#8220;DIY&#8221; software is not a bookkeeping service, rather a bookkeeping <em>tool</em>.
+    </p>
+  </div>
+</div>
+
+<div id="block-yui_3_17_2_5_1459961244674_44334" class="sqs-block image-block sqs-block-image" data-block-type="5">
+  <div id="yui_3_17_2_1_1467691392444_443" class="sqs-block-content">
+    <div id="yui_3_17_2_1_1467691392444_442" class="image-block-outer-wrapper layout-caption-below ">
+      <div id="yui_3_17_2_1_1467691392444_441" class="intrinsic">
+        <div id="yui_3_17_2_1_1467691392444_440" class="image-block-wrapper " data-description="">
+          <img class="thumb-image loaded" src="http://static1.squarespace.com/static/562f959fe4b022e56e74eb49/t/57056d55e707eb64fd5cc414/1459973479862/Pug?format=750w" alt="Pug" data-image-resolution="750w" data-src="http://static1.squarespace.com/static/562f959fe4b022e56e74eb49/t/57056d55e707eb64fd5cc414/1459973479862/Pug" data-image="http://static1.squarespace.com/static/562f959fe4b022e56e74eb49/t/57056d55e707eb64fd5cc414/1459973479862/Pug" data-image-dimensions="550x366" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="57056d55e707eb64fd5cc414" data-type="image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="block-yui_3_17_2_5_1459961244674_44558" class="sqs-block html-block sqs-block-html" data-block-type="2">
+  <div class="sqs-block-content">
+    <h4>
+      <strong>The &#8220;Fully Automated” Bookkeeping Service: Software+Human Touch</strong>
+    </h4>
+    
+    <p>
+      The third and final option which we will most definitely compare to a puppy being wrapped in a blanket—are software as a service options. This hybrid service provides the best of both worlds, giving users access to customized software as well as a dedicated bookkeeper. Instead of having to reconcile your own transactions, a bookkeeper (accountant) will do it for you. Some of these services like <strong><a href="https://jurnal.id">Jurnal</a></strong>, offer unlimited consultation at no hourly cost. Instead they prefer the more modern “Netflix” model of a monthly flat-rate fee. This gives business owners comfort, knowing the can reach out for advice without fear of incurring extra costs and make more accurate monthly budget predictions. Rather than a mean (tool) to an end, this option is a completely automated solution.
+    </p>
+    
+    <p>
+      This option will not be for everyone, for example—extremely large and complicated corporations or accounting firms (just covering our bases). However for the other 90% of business owners—this type of bookkeeping service  is likely to be the most inclusive and cost effective. It offers all of the good (and more) of the aforementioned methods without the bad. The hybrid mixture of cloud-based tech combined with a human element of a bookkeeper takes away the headache of navigating tax law and entering data—while still providing a high touch high tech solution to your bookkeeping service needs.
+    </p>
+  </div>
+</div>

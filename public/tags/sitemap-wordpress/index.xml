@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Sitemap Wordpress on Muhammad Fahrizal Rahman </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://riesal.github.io/tags/sitemap-wordpress/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Thu, 13 Aug 2015 09:07:42 &#43;0000</updated>
+    
+    <item>
+      <title>Easy ways to create a sitemap</title>
+      <link>https://riesal.github.io/2015/08/easy-ways-to-create-a-sitemap/</link>
+      <pubDate>Thu, 13 Aug 2015 09:07:42 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2015/08/easy-ways-to-create-a-sitemap/</guid>
+      <description>
+
+&lt;h3 id=&#34;what-is-a-sitemap&#34;&gt;What is a sitemap?&lt;/h3&gt;
+
+&lt;p&gt;A sitemap is a document that lists all URLs of your website that you would like crawled by a search engine. Most often, this document gives additional details such as the date a page was last modified, how frequently a page may change, and whether the page should be given priority over others, I will show you all the easy ways to create a sitemap..&lt;/p&gt;
+
+&lt;h3 id=&#34;why-do-i-need-a-sitemap&#34;&gt;Why do I need a sitemap?&lt;/h3&gt;
+
+&lt;p&gt;We’ve all become accustomed to using a search engine, probably daily. We often “Google” our questions throughout the day. Sitemaps are important because they tell search engines what pages are available for crawling on the website. They help search engines navigate your website and with this, your content is indexed.&lt;/p&gt;
+
+&lt;p&gt;You may be wondering how sitemaps work, since it is kind of an abstract concept. Think of it this way, your website is a building, and the sitemap is the blueprint that explains where all the parts of the structure are. An important addition to any site, they are easy to create and once they are set up, do not require a lot of maintenance.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-do-the-search-engines-find-the-sitemap&#34;&gt;How do the search engines find the sitemap?&lt;/h3&gt;
+
+&lt;p&gt;Once your sitemap is set up, search engines don’t automatically find it. To have your site indexed, a submittal process is required. The process is easy, and this can be accomplished in just a few simple steps. There are others, but the two major search engines to start with are Google and Bing. Easy ways to create a sitemap, once you have your sitemap ready, you can do this by setting up a &lt;a href=&#34;https://www.google.com/webmasters/tools/&#34; target=&#34;_blank&#34;&gt;Google Webmaster Tools&lt;/a&gt; and a &lt;a href=&#34;http://www.bing.com/toolbox/webmaster&#34; target=&#34;_blank&#34;&gt;Bing Webmaster Tools&lt;/a&gt; account. After the accounts are setup, you will be able to walk through step by step to get your sitemap submitted.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-to-create-a-sitemap&#34;&gt;&lt;strong&gt;How to create a sitemap&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&#34;small-website-solution-manual-option&#34;&gt;&lt;strong&gt;Small website solution manual option&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.xml-sitemaps.com/&#34; target=&#34;_blank&#34;&gt;XML-Sitemaps&lt;/a&gt; is a tool that will generate a sitemap for you. Currently, it will generate up to 500 pages. This option works best for small websites that are not updated frequently since it requires manual updating each time a page is added or removed. It’s worth mentioning in case your preference is to be up and running quickly and don’t mind doing the manual work of creating and moving the sitemap file. If you want to create something fast, or are just curious about what a sitemap looks like, it is easy to generate one. All you have to do is enter your URL and it takes care of the rest.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;aligncenter size-full wp-image-12277&#34; src=&#34;http://getflywheel.com/wp-content/uploads/2015/08/xml-sitemap-generator.jpg&#34; alt=&#34;xml-sitemap-generator&#34; width=&#34;1022&#34; height=&#34;272&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the generator has created your sitemap, you need to upload it to the root of your domain; the URL will be something like www.yoursite.com/sitemap.xml.&lt;/p&gt;
+
+&lt;h4 id=&#34;wordpress-specific-solutions-for-sitemaps&#34;&gt;WordPress specific solutions for sitemaps&lt;/h4&gt;
+
+&lt;p&gt;We all know how awesome WordPress is and that there are many great plugins available. Although there is nothing wrong with manually creating a sitemap, it can be a pain if you have to do this all of the time. With sitemap specific plugins, there is no need to manually create your own. Although there are many options (and opinions!) out there, these two have been chosen as great options for an automatic solution to get you up and running.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Yoast’s WordPress SEO&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You may already be using WordPress SEO by Yoast. If so, it does have a sitemap generator built right into it. It is very easy to setup.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;aligncenter size-full wp-image-12278&#34; src=&#34;http://getflywheel.com/wp-content/uploads/2015/08/yoast-plugin.jpg&#34; alt=&#34;yoast-plugin&#34; width=&#34;1022&#34; height=&#34;1266&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You will see an extensive option list that can be customized to your liking. If there are specific post types and taxonomies that you would like excluded, that is an option. If you have a very large site, Yoast has the capability to only include the specified number of URL’s listed on a page, which is less strain on your server.&lt;/p&gt;
+
+&lt;p&gt;The nice thing is, this plugin takes care of the generating and publishing of the sitemap. It will be found at &lt;a href=&#34;http://www.yoursite.com/sitemap_index.xml&#34;&gt;http://www.yoursite.com/sitemap_index.xml&lt;/a&gt;. The main sitemap page lists a sitemap for each post type. It lists all the URLs that you would like crawled.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Google XML Sitemap&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://wordpress.org/plugins/google-sitemap-generator/&#34; target=&#34;_blank&#34;&gt;Google XML Sitemaps&lt;/a&gt; is another great option. Google XML Sitemaps gives you extra information like details of when your sitemap was last generated, and it also has the capability to calculate the priority for each post by looking at the number of comments.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;aligncenter size-full wp-image-12275&#34; src=&#34;http://getflywheel.com/wp-content/uploads/2015/08/google-xml-sitemaps.jpg&#34; alt=&#34;google-xml-sitemaps&#34; width=&#34;1022&#34; height=&#34;653&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It does require a bit of setup to get up and running. The main settings page has options so you can create the perfect sitemap. Most of the configuration settings can be modified on this same page. Like Yoast, you can easily choose what to exclude. In addition to choosing the number of posts that are listed, you can increase the memory limit and execution time for the sitemap creation process, making this a flexible option.&lt;/p&gt;
+
+&lt;p&gt;This plugin will publish and update the sitemap automatically, so once things are set up, you do not have to do anything else, that easy ways to create a sitemap by default, this is the path to the sitemap: &lt;a href=&#34;http://www.yoursite.com/index.xml&#34;&gt;http://www.yoursite.com/index.xml&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s a good practice to have a sitemap, and as an extra motivator, it’s worth mentioning the fact that there are SEO benefits to having one. On your journey to sitemapping, you will find that there are easy options for creating a sitemap, including great WordPress specific plugins that update and grow along with your site.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Keep checking the &lt;a href=&#34;http://blog.intispace.com/&#34;&gt;intispace blog&lt;/a&gt; for more upcoming tips on starting your own business.&lt;/strong&gt; Also, send us a tweet &lt;a href=&#34;https://twitter.com/intispace&#34;&gt;@intispace&lt;/a&gt; with your own ideas on what makes a great domain name!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This article was brought to you by Intispace Netmedia, for scalable wordpress hosting visit our site here &lt;strong&gt;&lt;a href=&#34;https://intispace.com/&#34;&gt;www.intispace.com&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

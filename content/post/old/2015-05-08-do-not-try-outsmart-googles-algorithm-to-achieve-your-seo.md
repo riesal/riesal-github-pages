@@ -1,0 +1,111 @@
+---
+title: Do not try Outsmart Google’s Algorithm To Achieve Your SEO
+author: Fanny Linardi
+layout: post
+date: 2015-05-08T11:54:33+00:00
+url: /2015/05/do-not-try-outsmart-googles-algorithm-to-achieve-your-seo/
+dsq_thread_id:
+  - 3747022264
+categories:
+  - Business
+  - Domain Names
+  - SEO
+tags:
+  - Do not try Outsmart Google’s Algorithm To Achieve Your SEO
+
+---
+<section>**Instead of trying to cheat the major search engines’ algorithms, come up with compelling content that reaches your audience. The SEO will follow.**</p> 
+
+Far too often businesses try to crack the SEO “code” in order to arrive at the number one spot on Google. However, with a continually changing algorithm and no guarantee for success, your best bet is to focus on your audience, not the search engine.
+
+Google, along with other popular search engines such as Yahoo and Bing, attempt to reward sites that have compelling content that actually meet their visitors’ needs. The algorithms are designed to display the absolute best result for keywords that are entered into a search bar.
+
+This isn’t to say that there aren’t little tweaks and adjustments that SEOs make in order to boost your search engine rankings. But when it really comes down to it some of the simplest changes to your site can greatly boost your web presence. We take a look at four details you can implement into your site’s plan to fit a search engine’s ever-changing mold:
+
+**It starts with the framework**
+
+The design and development of your site is crucial for achieving a [high SEO ranking][1]. This starts with how you lay out your site and ends with the final development. Building a crawl-friendly website that allows your user to easily navigate the site will drastically improve your site’s rankings.
+
+Start by creating a sitemap and a wireframe. Don’t even consider developing the site until you have a firm design for your site that will allow for a smooth UX (User Experience). [Take a look at these other guidelines][2] you should follow when designing and developing your site.
+
+If a search engine can’t navigate through your site, you will not achieve the rankings that you desire.
+
+**Implement a blog**
+
+There are many reasons to start a [blog for your business][3], and improving SEO is at the top of the list. You don’t have to be a world-renowned author to write intriguing blog posts. All you need is a passion for your subject matter and a desire to share some of your insights with your clients and visitors.
+
+Having a blog that you frequently update (we suggest posting at least once a week) greatly increases the number of pages related to your site. Every post you publish creates another chance for a potential visitor to find your site.
+
+As with all other SEO practices, focus on creating content that will apply to your audience. Write blog posts that your visitors can actually relate to. As you build a strong library of posts, and as you gain followers, you will be able to add more links, and outside blogs will start linking to you, eventually building a large network.
+
+**Social Media**
+
+Similar to having a blog, having your business on various social media platforms builds a network and adds to the number of sources a search engine can display for your business. Try searching for a business you’re familiar with and see how far down their Twitter or Facebook page appears on the SERP (Search Engine Results Page). Most likely it’s near the top.
+
+Social media also gives you [a chance to interact with your clients][4]. Instead of paying thousands for advertising that reaches the wrong demographic, you’re displaying information that leads directly to those who are following you.
+
+In addition to these benefits of social media, a Tweet that goes viral or a Facebook post that gets shared over 1000 times will build more links, eventually helping your rankings.
+
+**Focusing on keywords and content**
+
+We arrive back to what SEO is really about: creating content that your visitors actually want to see. The best way to do this is by including the keywords that your clients will be searching for.
+
+[The role of keywords in SEO has changed][5] over the years, but there’s no arguing that they still affect how a user finds and views your site. If you’re not using the keywords that your audience is typing in, it’s unlikely that they’ll arrive at your site.
+
+Possibly the best route for SEO success is defining your audience and finding the words that they will be searching for. [<section>**Instead of trying to cheat the major search engines’ algorithms, come up with compelling content that reaches your audience. The SEO will follow.**</p> 
+
+Far too often businesses try to crack the SEO “code” in order to arrive at the number one spot on Google. However, with a continually changing algorithm and no guarantee for success, your best bet is to focus on your audience, not the search engine.
+
+Google, along with other popular search engines such as Yahoo and Bing, attempt to reward sites that have compelling content that actually meet their visitors’ needs. The algorithms are designed to display the absolute best result for keywords that are entered into a search bar.
+
+This isn’t to say that there aren’t little tweaks and adjustments that SEOs make in order to boost your search engine rankings. But when it really comes down to it some of the simplest changes to your site can greatly boost your web presence. We take a look at four details you can implement into your site’s plan to fit a search engine’s ever-changing mold:
+
+**It starts with the framework**
+
+The design and development of your site is crucial for achieving a [high SEO ranking][1]. This starts with how you lay out your site and ends with the final development. Building a crawl-friendly website that allows your user to easily navigate the site will drastically improve your site’s rankings.
+
+Start by creating a sitemap and a wireframe. Don’t even consider developing the site until you have a firm design for your site that will allow for a smooth UX (User Experience). [Take a look at these other guidelines][2] you should follow when designing and developing your site.
+
+If a search engine can’t navigate through your site, you will not achieve the rankings that you desire.
+
+**Implement a blog**
+
+There are many reasons to start a [blog for your business][3], and improving SEO is at the top of the list. You don’t have to be a world-renowned author to write intriguing blog posts. All you need is a passion for your subject matter and a desire to share some of your insights with your clients and visitors.
+
+Having a blog that you frequently update (we suggest posting at least once a week) greatly increases the number of pages related to your site. Every post you publish creates another chance for a potential visitor to find your site.
+
+As with all other SEO practices, focus on creating content that will apply to your audience. Write blog posts that your visitors can actually relate to. As you build a strong library of posts, and as you gain followers, you will be able to add more links, and outside blogs will start linking to you, eventually building a large network.
+
+**Social Media**
+
+Similar to having a blog, having your business on various social media platforms builds a network and adds to the number of sources a search engine can display for your business. Try searching for a business you’re familiar with and see how far down their Twitter or Facebook page appears on the SERP (Search Engine Results Page). Most likely it’s near the top.
+
+Social media also gives you [a chance to interact with your clients][4]. Instead of paying thousands for advertising that reaches the wrong demographic, you’re displaying information that leads directly to those who are following you.
+
+In addition to these benefits of social media, a Tweet that goes viral or a Facebook post that gets shared over 1000 times will build more links, eventually helping your rankings.
+
+**Focusing on keywords and content**
+
+We arrive back to what SEO is really about: creating content that your visitors actually want to see. The best way to do this is by including the keywords that your clients will be searching for.
+
+[The role of keywords in SEO has changed][5] over the years, but there’s no arguing that they still affect how a user finds and views your site. If you’re not using the keywords that your audience is typing in, it’s unlikely that they’ll arrive at your site.
+
+Possibly the best route for SEO success is defining your audience and finding the words that they will be searching for.][6] is a great resource for helping you find the keywords that you should include in your content. Once you know what your customers are actually searching for, you can refine your content to meet those needs.
+
+Rather than spending time trying to crack the so-called “Google code”, try focusing on creating a site that contains compelling and linkable content. Search engines strive to determine which site will fit your customers’ needs. Create a content plan that fulfills these needs, eventually leading your site to the top of the SERP. Keep checking the [intispace blog][7] for more upcoming tips on starting your own business.
+
+Also, send us a tweet [@intispace][8] with your own ideas on what makes a great domain name!
+
+&nbsp;
+
+This article was brought to you by Intispace Netmedia, for scalable wordpress hosting visit our site here [www.intispace.com][9]</section>
+
+ [1]: http://www.westhost.com/blog/2015/05/01/westhosts-introduction-to-seo/#.VUeb945VhHw
+ [2]: http://www.searchenginejournal.com/21-things-every-web-developer/111772/2/
+ [3]: http://www.uk2.net/blog/6-tips-successful-business-blog/
+ [4]: http://www.vps.net/blog/2015/01/05/overtaken-social-media/
+ [5]: http://www.westhost.com/blog/2015/05/06/making-your-way-through-the-tricky-world-of-tags/#.VUo63I5VhHw
+ [6]: https://adwords.google.com/KeywordPlanner
+ [7]: http://blog.intispace.com
+ [8]: https://twitter.com/intispace
+ [9]: https://intispace.com

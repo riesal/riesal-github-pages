@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>How Does Ssl Protect My Website on Muhammad Fahrizal Rahman </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://riesal.github.io/tags/how-does-ssl-protect-my-website/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Sun, 17 May 2015 17:12:19 &#43;0000</updated>
+    
+    <item>
+      <title>How Does SSL Protect My Website?</title>
+      <link>https://riesal.github.io/2015/05/how-does-ssl-protect-my-website/</link>
+      <pubDate>Sun, 17 May 2015 17:12:19 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2015/05/how-does-ssl-protect-my-website/</guid>
+      <description>&lt;p&gt;One of the most economical and secure ways to protect your website on affordable hosting platforms is to deploy a private Secure Socket Layer (SSL) on you’re your website giving the instant ability to roll out protected URLs like &lt;a href=&#34;https://www.mysite.com/&#34;&gt;https://www.mysite.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are still in doubt as to what an SSL actually does consider this explanation from &lt;a href=&#34;http://www.symantec.com/theme.jsp?themeid=how-ssl-works&#34;&gt;Symantec&lt;/a&gt; on the digital handshake that takes place between a browser and a server:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;A browser attempts to connect to a website secured with SSL.&lt;/li&gt;
+&lt;li&gt;The browser requests that the web server identify itself.&lt;/li&gt;
+&lt;li&gt;The server sends the browser a copy of its SSL certificate.&lt;/li&gt;
+&lt;li&gt;The browser checks whether it trusts the SSL certificate. If so, it sends a message to the server.&lt;/li&gt;
+&lt;li&gt;The server sends back a digitally signed acknowledgement to start an SSL 7 encrypted session.&lt;/li&gt;
+&lt;li&gt;Encrypted data is shared between the browser and the server&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Your site receives a permanent “security guard” which protects users in an online transaction, and encrypts data during transmission giving you, said Symantec, a “trillion year head start over a hacker.”&lt;/p&gt;
+
+&lt;p&gt;“At current computing speeds, a hacker with the time, tools, and motivation to attack using brute force would require a trillion years to break into a session protected by an SGC-enabled certificate,” said Symantec.&lt;/p&gt;
+
+&lt;p&gt;“To enable strong encryption for the most site visitors, choose an SSL Certificate that enables 128-bit minimum encryption for 99.9 percent of website visitors.”&lt;/p&gt;
+
+&lt;p&gt;But there are other benefits, too, including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Credentials establish identity online&lt;/li&gt;
+&lt;li&gt;Authentication generates trust in credential&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SSL certificates on Intispace platforms are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Signed by Comodo, Geotrust, RapidSSL, Certum, Thawte, Symantec&lt;/li&gt;
+&lt;li&gt;99.3% compatibility with browsers&lt;/li&gt;
+&lt;li&gt;256-bit encryption&lt;/li&gt;
+&lt;li&gt;Lock appears in browser&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Aws Trusted Advisor on Muhammad Fahrizal Rahman </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://riesal.github.io/tags/aws-trusted-advisor/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Thu, 05 May 2016 16:13:53 &#43;0000</updated>
+    
+    <item>
+      <title>AWS Trusted Advisor</title>
+      <link>https://riesal.github.io/2016/05/aws-trusted-advisor/</link>
+      <pubDate>Thu, 05 May 2016 16:13:53 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2016/05/aws-trusted-advisor/</guid>
+      <description>
+
+&lt;p&gt;AWS Trusted Advisor is a product that allows a cloud administrator to provision Amazon Web Services resources according to best practices in four categories: cost optimization, security, fault tolerance and performance improvement. AWS Trusted Advisor compiles best practices based on the collective experiences of previous and existing AWS customers.&lt;/p&gt;
+
+&lt;p&gt;AWS Trusted Advisor performs checks that monitor and can help improve performance of AWS resources. The service displays a green check mark icon when no change is needed, an orange exclamation point when an investigation is recommended and a red exclamation point when action is recommended. The number of checks depends on the AWS Support Plan, as Basic and Developer plans are limited to four checks; Business and Enterprise plans allow for 41 checks.&lt;/p&gt;
+
+&lt;p&gt;AWS Trusted Advisor provides a dashboard for an admin to visualize the four categories it evaluates, including recent changes to those categories. The service provides action links in its reports, which are hyperlinks that connect an administrator user to the AWS Management Console to quickly make changes to resources.&lt;/p&gt;
+
+&lt;p&gt;A cloud administrator working in AWS can receive free notifications through Trusted Advisor to keep updated on resource deployments. An admin can also manually refresh checks every five minutes from the dashboard.&lt;/p&gt;
+
+&lt;p&gt;t&amp;#8217;s possible to exclude certain items in a Trusted Advisor report if they are not relevant to a particular cloud environment. Trusted Advisor integrates with Amazon Identity and Access Management, allowing an admin to limit access to specific checks or categories.&lt;/p&gt;
+
+&lt;h3 id=&#34;features&#34;&gt;Features&lt;/h3&gt;
+
+&lt;div class=&#34;aws-text-box section&#34;&gt;
+  &lt;div class=&#34; &#34;&gt;
+    &lt;p&gt;
+      AWS Trusted Advisor provides a suite of features for you to customize recommendations and to proactively monitor your AWS resources.
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;columnbuilder parbase section&#34;&gt;
+  &lt;div class=&#34;row column-builder&#34;&gt;
+    &lt;div class=&#34;eight columns &#34;&gt;
+      &lt;div class=&#34;parsys col1&#34;&gt;
+        &lt;div class=&#34;title-wrapper section&#34;&gt;
+          &lt;div class=&#34;row title&#34;&gt;
+            &lt;div class=&#34;twelve columns&#34;&gt;
+              &lt;h4 id=&#34;Trusted_Advisor_Notifications&#34;&gt;
+                Trusted Advisor Notifications
+              &lt;/h4&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+
+&lt;pre&gt;&lt;code&gt;    &amp;lt;div class=&amp;quot;aws-text-box section&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot; &amp;quot;&amp;gt;
+        &amp;lt;div class=&amp;quot;four columns &amp;quot;&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+        &amp;lt;div class=&amp;quot;four columns &amp;quot;&amp;gt;
+          &amp;lt;div class=&amp;quot;parsys col2&amp;quot;&amp;gt;
+            &amp;lt;div class=&amp;quot;aws-comp section&amp;quot;&amp;gt;
+              &amp;lt;figure class=&amp;quot;image-box &amp;quot;&amp;gt; 
+
+              &amp;lt;div class=&amp;quot;parbase image&amp;quot;&amp;gt;
+                &amp;lt;img class=&amp;quot;alignleft&amp;quot; title=&amp;quot;201446_thumb_TA_Graphics_Notifications&amp;quot; src=&amp;quot;https://d0.awsstatic.com/Image_Thumbs/TrustedAdvisor/ConsoleVersion/201446_thumb_TA_Graphics_Notifications.png&amp;quot; alt=&amp;quot;201446_thumb_TA_Graphics_Notifications&amp;quot; /&amp;gt;
+              &amp;lt;/div&amp;gt;&amp;lt;/figure&amp;gt;
+            &amp;lt;/div&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+        &amp;lt;p&amp;gt;
+          The Trusted Advisor notification feature helps you stay up-to-date with your AWS resource deployment. You will be notified by weekly email when you opt in for this service, and it is totally free.
+        &amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;quot;four columns &amp;quot;&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;div class=&#34;columnbuilder parbase section&#34;&gt;
+  &lt;div class=&#34;row column-builder&#34;&gt;
+    &lt;div class=&#34;four columns &#34;&gt;
+    &lt;/div&gt;
+    
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;eight columns &amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;parsys col2&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;title-wrapper section&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;row title&amp;quot;&amp;gt;
+        &amp;lt;div class=&amp;quot;twelve columns&amp;quot;&amp;gt;
+          &amp;lt;h4&amp;gt;
+            Recent Changes&amp;lt;sup&amp;gt; *&amp;lt;/sup&amp;gt;
+          &amp;lt;/h4&amp;gt;
+        &amp;lt;/div&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&amp;quot;aws-text-box section&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot; &amp;quot;&amp;gt;
+        &amp;lt;div class=&amp;quot;four columns &amp;quot;&amp;gt;
+          &amp;lt;div class=&amp;quot;parsys col1&amp;quot;&amp;gt;
+            &amp;lt;div class=&amp;quot;aws-comp section&amp;quot;&amp;gt;
+              &amp;lt;figure class=&amp;quot;image-box &amp;quot;&amp;gt; 
+
+              &amp;lt;div class=&amp;quot;parbase image&amp;quot;&amp;gt;
+                &amp;lt;img class=&amp;quot;alignleft&amp;quot; title=&amp;quot;201437_thumb_TA_Graphics_RecentChanges&amp;quot; src=&amp;quot;https://d0.awsstatic.com/Image_Thumbs/TrustedAdvisor/ConsoleVersion/201437_thumb_TA_Graphics_RecentChanges.png&amp;quot; alt=&amp;quot;201437_thumb_TA_Graphics_RecentChanges&amp;quot; /&amp;gt;
+              &amp;lt;/div&amp;gt;&amp;lt;/figure&amp;gt;
+            &amp;lt;/div&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+        &amp;lt;p&amp;gt;
+          You can track recent changes of check status on the console dashboard. The most recent changes appear at the top of the list to bring them to your attention.
+        &amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;div class=&#34;columnbuilder parbase section&#34;&gt;
+  &lt;div class=&#34;row column-builder&#34;&gt;
+    &lt;div class=&#34;eight columns &#34;&gt;
+      &lt;div class=&#34;parsys col1&#34;&gt;
+        &lt;div class=&#34;title-wrapper section&#34;&gt;
+          &lt;div class=&#34;row title&#34;&gt;
+            &lt;div class=&#34;twelve columns&#34;&gt;
+              &lt;h3 id=&#34;Exclude_Items&#34;&gt;
+              &lt;/h3&gt;
+              
+              &lt;h4&gt;
+                Exclude Items
+              &lt;/h4&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+
+&lt;pre&gt;&lt;code&gt;    &amp;lt;div class=&amp;quot;aws-text-box section&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot; &amp;quot;&amp;gt;
+        &amp;lt;div class=&amp;quot;four columns &amp;quot;&amp;gt;
+          &amp;lt;div class=&amp;quot;parsys col2&amp;quot;&amp;gt;
+            &amp;lt;div class=&amp;quot;aws-comp section&amp;quot;&amp;gt;
+              &amp;lt;figure class=&amp;quot;image-box &amp;quot;&amp;gt; 
+
+              &amp;lt;div class=&amp;quot;parbase image&amp;quot;&amp;gt;
+                &amp;lt;img class=&amp;quot;alignright&amp;quot; title=&amp;quot;201438_thumb_TA_Graphics_ExcludeInclude&amp;quot; src=&amp;quot;https://d0.awsstatic.com/Image_Thumbs/TrustedAdvisor/ConsoleVersion/201438_thumb_TA_Graphics_ExcludeInclude.png&amp;quot; alt=&amp;quot;201438_thumb_TA_Graphics_ExcludeInclude&amp;quot; /&amp;gt;
+              &amp;lt;/div&amp;gt;&amp;lt;/figure&amp;gt;
+            &amp;lt;/div&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+        &amp;lt;p&amp;gt;
+          The &amp;amp;#8220;exclude items&amp;amp;#8221; feature (formerly called “suppress”) allows you to customize the Trusted Advisor report. You can exclude items from the check result if they are not relevant; the excluded items appear separately, and you can restore (include) them at any time.
+        &amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;quot;four columns &amp;quot;&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;div class=&#34;columnbuilder parbase section&#34;&gt;
+  &lt;div class=&#34;row column-builder&#34;&gt;
+    &lt;div class=&#34;four columns &#34;&gt;
+    &lt;/div&gt;
+    
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;eight columns &amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;parsys col2&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;title-wrapper section&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;row title&amp;quot;&amp;gt;
+        &amp;lt;div class=&amp;quot;twelve columns&amp;quot;&amp;gt;
+          &amp;lt;h4 id=&amp;quot;Action_Links&amp;quot;&amp;gt;
+            Action Links
+          &amp;lt;/h4&amp;gt;
+        &amp;lt;/div&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&amp;quot;aws-text-box section&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot; &amp;quot;&amp;gt;
+        &amp;lt;div class=&amp;quot;four columns &amp;quot;&amp;gt;
+          &amp;lt;div class=&amp;quot;parsys col1&amp;quot;&amp;gt;
+            &amp;lt;div class=&amp;quot;aws-comp section&amp;quot;&amp;gt;
+              &amp;lt;figure class=&amp;quot;image-box &amp;quot;&amp;gt; 
+
+              &amp;lt;div class=&amp;quot;parbase image&amp;quot;&amp;gt;
+                &amp;lt;img class=&amp;quot;alignleft&amp;quot; title=&amp;quot;201442_thumb_TA_Graphics_ActionLink&amp;quot; src=&amp;quot;https://d0.awsstatic.com/Image_Thumbs/TrustedAdvisor/ConsoleVersion/201442_thumb_TA_Graphics_ActionLink.png&amp;quot; alt=&amp;quot;201442_thumb_TA_Graphics_ActionLink&amp;quot; /&amp;gt;
+              &amp;lt;/div&amp;gt;&amp;lt;/figure&amp;gt;
+            &amp;lt;/div&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+        &amp;lt;p&amp;gt;
+          Items in a Trusted Advisor report have hyperlinks to the AWS Management Console, where you can take action on the Trusted Advisor recommendations.
+        &amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;div class=&#34;columnbuilder parbase section&#34;&gt;
+  &lt;div class=&#34;row column-builder&#34;&gt;
+    &lt;div class=&#34;eight columns &#34;&gt;
+      &lt;div class=&#34;parsys col1&#34;&gt;
+        &lt;div class=&#34;title-wrapper section&#34;&gt;
+          &lt;div class=&#34;row title&#34;&gt;
+            &lt;div class=&#34;twelve columns&#34;&gt;
+              &lt;h3 id=&#34;Access_Management&#34;&gt;
+                &lt;a href=&#34;http://aws.amazon.com/premiumsupport/faqs/#TAnewIAM&#34; name=&#34;Access_Management&#34;&gt; &lt;/a&gt;
+              &lt;/h3&gt;
+              
+              &lt;h3&gt;
+              &lt;/h3&gt;
+              
+              &lt;h4&gt;
+                Access Management
+              &lt;/h4&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+
+&lt;pre&gt;&lt;code&gt;    &amp;lt;div class=&amp;quot;aws-text-box section&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot; &amp;quot;&amp;gt;
+        &amp;lt;div class=&amp;quot;four columns &amp;quot;&amp;gt;
+          &amp;lt;div class=&amp;quot;parsys col2&amp;quot;&amp;gt;
+            &amp;lt;div class=&amp;quot;aws-comp section&amp;quot;&amp;gt;
+              &amp;lt;figure class=&amp;quot;image-box &amp;quot;&amp;gt; 
+
+              &amp;lt;div class=&amp;quot;parbase image&amp;quot;&amp;gt;
+                &amp;lt;img class=&amp;quot;alignleft&amp;quot; title=&amp;quot;201439_thumb_TA_Graphics_IAM&amp;quot; src=&amp;quot;https://d0.awsstatic.com/Image_Thumbs/TrustedAdvisor/ConsoleVersion/201439_thumb_TA_Graphics_IAM.png&amp;quot; alt=&amp;quot;201439_thumb_TA_Graphics_IAM&amp;quot; /&amp;gt;
+              &amp;lt;/div&amp;gt;&amp;lt;/figure&amp;gt;
+            &amp;lt;/div&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+        &amp;lt;p&amp;gt;
+          You can use AWS Identity and Access Management (IAM) to control access to specific checks or check categories.
+        &amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;quot;four columns &amp;quot;&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;div class=&#34;columnbuilder parbase section&#34;&gt;
+  &lt;div class=&#34;row column-builder&#34;&gt;
+    &lt;div class=&#34;four columns &#34;&gt;
+    &lt;/div&gt;
+    
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;eight columns &amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;parsys col2&amp;quot;&amp;gt;
+    &amp;lt;div class=&amp;quot;title-wrapper section&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot;row title&amp;quot;&amp;gt;
+        &amp;lt;div class=&amp;quot;twelve columns&amp;quot;&amp;gt;
+          &amp;lt;h3 id=&amp;quot;AWS_Support_API&amp;quot;&amp;gt;
+            &amp;lt;a href=&amp;quot;https://aws.amazon.com/documentation/awssupport/&amp;quot; name=&amp;quot;AWS_Support_API&amp;quot;&amp;gt; &amp;lt;/a&amp;gt;
+          &amp;lt;/h3&amp;gt;
+
+          &amp;lt;h3&amp;gt;
+          &amp;lt;/h3&amp;gt;
+
+          &amp;lt;h3&amp;gt;
+          &amp;lt;/h3&amp;gt;
+
+          &amp;lt;h4&amp;gt;
+            AWS Support API&amp;lt;sup&amp;gt; *&amp;lt;/sup&amp;gt;
+          &amp;lt;/h4&amp;gt;
+        &amp;lt;/div&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&amp;quot;aws-text-box section&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot; &amp;quot;&amp;gt;
+        &amp;lt;div class=&amp;quot;four columns &amp;quot;&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+        &amp;lt;div class=&amp;quot;four columns &amp;quot;&amp;gt;
+          &amp;lt;div class=&amp;quot;parsys col1&amp;quot;&amp;gt;
+            &amp;lt;div class=&amp;quot;aws-comp section&amp;quot;&amp;gt;
+              &amp;lt;figure class=&amp;quot;image-box &amp;quot;&amp;gt; 
+
+              &amp;lt;div class=&amp;quot;parbase image&amp;quot;&amp;gt;
+                &amp;lt;img class=&amp;quot;alignleft&amp;quot; title=&amp;quot;201443_thumb_TA_Graphics_API&amp;quot; src=&amp;quot;https://d0.awsstatic.com/Image_Thumbs/TrustedAdvisor/ConsoleVersion/201443_thumb_TA_Graphics_API.png&amp;quot; alt=&amp;quot;201443_thumb_TA_Graphics_API&amp;quot; /&amp;gt;
+              &amp;lt;/div&amp;gt;&amp;lt;/figure&amp;gt;
+            &amp;lt;/div&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+        &amp;lt;p&amp;gt;
+          You can retrieve and refresh Trusted Advisor results programmatically using AWS Support API.
+        &amp;lt;/p&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;div class=&#34;columnbuilder parbase section&#34;&gt;
+  &lt;div class=&#34;row column-builder&#34;&gt;
+    &lt;div class=&#34;eight columns &#34;&gt;
+      &lt;div class=&#34;parsys col1&#34;&gt;
+        &lt;div class=&#34;title-wrapper section&#34;&gt;
+          &lt;div class=&#34;row title&#34;&gt;
+            &lt;div class=&#34;twelve columns&#34;&gt;
+              &lt;h3 id=&#34;Refresh&#34;&gt;
+              &lt;/h3&gt;
+              
+              &lt;h3&gt;
+              &lt;/h3&gt;
+              
+              &lt;h4&gt;
+                Refresh
+              &lt;/h4&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        
+
+&lt;pre&gt;&lt;code&gt;    &amp;lt;div class=&amp;quot;aws-text-box section&amp;quot;&amp;gt;
+      &amp;lt;div class=&amp;quot; &amp;quot;&amp;gt;
+        &amp;lt;div class=&amp;quot;four columns &amp;quot;&amp;gt;
+          &amp;lt;div class=&amp;quot;parsys col2&amp;quot;&amp;gt;
+            &amp;lt;div class=&amp;quot;aws-comp section&amp;quot;&amp;gt;
+              &amp;lt;figure class=&amp;quot;image-box &amp;quot;&amp;gt; 
+
+              &amp;lt;div class=&amp;quot;parbase image&amp;quot;&amp;gt;
+                &amp;lt;img class=&amp;quot;alignnone alignleft&amp;quot; title=&amp;quot;201440_thumb_TA_Graphics_Refresh&amp;quot; src=&amp;quot;https://d0.awsstatic.com/Image_Thumbs/TrustedAdvisor/ConsoleVersion/201440_thumb_TA_Graphics_Refresh.png&amp;quot; alt=&amp;quot;201440_thumb_TA_Graphics_Refresh&amp;quot; /&amp;gt;
+              &amp;lt;/div&amp;gt;&amp;lt;/figure&amp;gt;
+            &amp;lt;/div&amp;gt;
+          &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+
+        &amp;lt;p&amp;gt;
+          You can refresh individual checks or refresh all the checks at once by clicking the Refresh All button in the top-right corner of the summary dashboard. A check is eligible for refresh 5 minutes after it was last refreshed.
+        &amp;lt;/p&amp;gt;
+
+        &amp;lt;div class=&amp;quot;four columns &amp;quot;&amp;gt;
+        &amp;lt;/div&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;quot;four columns &amp;quot;&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;div class=&amp;quot;four columns &amp;quot;&amp;gt;
+  &amp;lt;p&amp;gt;
+    &amp;lt;strong&amp;gt;Keep checking the &amp;lt;a href=&amp;quot;http://blog.intispace.com/&amp;quot;&amp;gt;intispace blog&amp;lt;/a&amp;gt; for more upcoming tips on starting your own business. &amp;lt;/strong&amp;gt;Also, send us a tweet &amp;lt;a href=&amp;quot;https://twitter.com/intispace&amp;quot;&amp;gt;@intispace&amp;lt;/a&amp;gt; with your own ideas on what makes a great domain name!
+  &amp;lt;/p&amp;gt;
+
+  &amp;lt;p&amp;gt;
+    &amp;lt;em&amp;gt;This article was brought to you by Intispace Netmedia, for scalable wordpress hosting visit our site here &amp;lt;strong&amp;gt;&amp;lt;a href=&amp;quot;https://intispace.com/&amp;quot;&amp;gt;www.intispace.com&amp;lt;/a&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/em&amp;gt;
+  &amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

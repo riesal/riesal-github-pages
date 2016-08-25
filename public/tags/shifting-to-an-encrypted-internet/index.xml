@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Shifting To An Encrypted Internet on Muhammad Fahrizal Rahman </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://riesal.github.io/tags/shifting-to-an-encrypted-internet/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Wed, 13 May 2015 18:59:46 &#43;0000</updated>
+    
+    <item>
+      <title>Shifting To An Encrypted Internet</title>
+      <link>https://riesal.github.io/2015/05/shifting-to-an-encrypted-internet/</link>
+      <pubDate>Wed, 13 May 2015 18:59:46 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2015/05/shifting-to-an-encrypted-internet/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Two thirds of all North American internet traffic will be encrypted by 2016, according to a new report by Sandvine, the Canadian-based software company. The reason behind it? Netflix.&lt;/strong&gt;&lt;span id=&#34;more-1596&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Due to more and more sites using HTTPS encryption to protect confidential user information such as credit card numbers and other personal data, the days of having every website on the internet encrypted may not be far off.&lt;/p&gt;
+
+&lt;p&gt;One of the world’s most visited sites is now making the switch to an &lt;a href=&#34;http://gizmodo.com/how-to-encrypt-everything-1586619248&#34;&gt;encrypted connection&lt;/a&gt;. Netflix has announced it will soon follow other internet giants such as Google and Amazon in making its services fully encrypted.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;So what is HTTP and HTTPS encryption?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hypertext Transfer Protocol (HTTP) is the method by which files are transferred throughout the World Wide Web. This protocol determines how browsers and web servers send information back and forth.&lt;/p&gt;
+
+&lt;p&gt;HTTPS adds protection to a typical HTTP. The additional ‘S’ is for &lt;a href=&#34;http://www.westhost.com/blog/2015/02/11/what-is-ssl-and-do-i-need-it-for-my-site/#.VUuY6I5VhHw&#34;&gt;Secure Socket Layer (SSL)&lt;/a&gt;. This added layer encrypts all of the data that is sent between a browser and a server. In other words if a hacker were to look at the HTTPS-protected files being sent between a browser and a server, all they would see is lines of garbage code.&lt;/p&gt;
+
+&lt;p&gt;This greatly protects a visitor if they’re submitting any personal information on a website. There is a trend of  some sites switching over to a HTTPS connection in order to up their level of security.&lt;/p&gt;
+
+&lt;p&gt;If you want to know if the site you’re visiting is protected with SSL, take a look at the address bar. If you see a little green padlock or https:// before the web address, you’re on a site that is encrypted.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;HTTPS around the web&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sandvine &lt;a href=&#34;https://www.sandvine.com/pr/2015/4/30/sandvine-two-thirds-of-north-american-internet-traffic-will-be-encrypted-in-2016.html&#34;&gt;conducted research showing that&lt;/a&gt; 65% of the internet’s current traffic is not encrypted. This will all change once Netflix makes the change later this year. One of the leaders in streaming services already accounts for about one third of North America’s internet traffic, meaning the change will make the majority of traffic encrypted.&lt;/p&gt;
+
+&lt;p&gt;Reed Hastings, CEO of Netflix, said, “[Netflix] is making the move to protect member privacy, particularly when the network is insecure, such as public WI-FI, and it helps protect members from eavesdropping by their ISP or employer, who may want to record our members’ viewing for other reasons.”.&lt;/p&gt;
+
+&lt;p&gt;This is a trend that most people predict will continue to grow. Google (including YouTube) already encrypts all of its pages, which accounts for a very large portion of the internet. Most e-commerce sites use HTTPS to protect their customers’ confidential information.&lt;/p&gt;
+
+&lt;p&gt;The CTO of Sandvine, Don Bowman, said, “The decision by leading applications to encrypt their traffic is great for subscribers because it ensures the content of their internet traffic remains private.”.&lt;/p&gt;
+
+&lt;p&gt;Expect to see more business owners choosing to encrypt their sites. Although you generally have to pay a little extra for the &lt;a href=&#34;http://www.midphase.com/blog/how-does-an-ssl-protect-my-website/&#34;&gt;SSL certificate,&lt;/a&gt; most agree that it’s well worth the price for the added protection.&lt;/p&gt;
+
+&lt;p&gt;Send us a tweet &lt;a href=&#34;https://twitter.com/intispace&#34;&gt;@intispace&lt;/a&gt; with your own ideas on what makes a great blog with SSL!&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;This article was brought to you by Intispace Netmedia, for scalable wordpress hosting visit our site here &lt;a href=&#34;https://intispace.com&#34;&gt;www.intispace.com&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

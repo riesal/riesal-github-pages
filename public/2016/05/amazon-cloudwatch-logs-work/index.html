@@ -1,0 +1,175 @@
+    <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> What is Amazon CloudWatch Logs and how does it work? &middot; Muhammad Fahrizal Rahman </title>
+    
+    <link rel="stylesheet" type="text/css" href="https://riesal.github.io/css/uno.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://riesal.github.io/css/lightGallery.css" />
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="Muhammad Fahrizal Rahman" />
+    
+    <script src="https://riesal.github.io/js/jquery.min.js"></script>
+    <script src="https://riesal.github.io/js/main.min.js">
+    </script>
+</head>
+
+    <body>
+        <div id="scriptHeader">
+    <span class="mobile btn-mobile-menu">
+            <i class="fa fa-bars btn-mobile-menu__icon"></i>
+            <i class="fa fa-times btn-mobile-close__icon hidden"> </i>
+    </span>
+    <header class="
+        
+            panel-cover panel-cover--collapsed
+        "  style="background-image: url(/images/background-cover.jpg)" >
+    <div class="panel-main">
+        <div class="panel-main__inner panel-inverted">
+            <div class="panel-main__content"> 
+                <a href="https://riesal.github.io/" title="link to homepage for Muhammad Fahrizal Rahman"> <img src="https://eastlondonnews.co.uk/wp-content/uploads/2014/04/write-your-own-blog.jpg" width="80" alt="Muhammad Fahrizal Rahman logo" class="panel-cover__logo logo" /> </a> 
+                <h1 class="panel-cover__title panel-title">
+                    <a href="https://riesal.github.io/"  title="link to homepage for Muhammad Fahrizal Rahman">Muhammad Fahrizal Rahman</a>
+                </h1>
+                <hr class="panel-cover__divider" />
+                <p class="panel-cover__description">  just walk your talk and practice what you preach  </p>
+                <hr class="panel-cover__divider panel-cover__divider--secondary" />
+                <div class="navigation-wrapper">
+                    <nav class="cover-navigation cover-navigation--primary">
+                        <ul class="navigation">
+                            <li class="navigation__item"><a href="https://riesal.github.io#blog" title="link to Muhammad Fahrizal Rahman blog" class="blog-button">View Posts</a> </li></br>
+			    <li class="navigation__item"><a href="/post/" title="link to Muhammad Fahrizal Rahman archive" class="blog-button">Archive</a> </li></br>
+                            
+                       </ul>
+                    </nav> <nav class="cover-navigation navigation--social">
+    <ul class="navigation"> 
+        
+        <li class="navigation__item">
+            <a href="http://twitter.com/siriesal" title="@siriesal on Twitter"> <i class='fa fa-twitter'></i> <span class="label">Twitter</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="https://bitbucket.org/riesal" title="riesal on bitbucket"> <i class='fa fa-bitbucket'></i> <span class="label">Bitbucket</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="https://github.com/riesal" title="riesal on github"> <i class='fa fa-github'></i> <span class="label">Github</span> </a>
+        </li>  </br> 
+        
+        <li class="navigation__item">
+            <a href="http://www.flickr.com/photos/riesal/" title="riesal on flickr"> <i class='fa fa-flickr'></i> <span class="label">Flickr</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="https://www.linkedin.com/in/riesal" title="Linkedin"> <i class='fa fa-linkedin'></i> <span class="label">Linkedin</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="mailto:ask@intispace.com" title="Email ask@intispace.com"> <i class='fa fa-envelope-o'></i> <span class="label">Email</span> </a>
+        </li>  </ul>
+</nav>
+ </div>
+            </div>
+        </div>
+        <div class="panel-cover--overlay"></div>
+    </div>
+</header>
+</div>
+<noscript>
+    <style>
+        #scriptHeader {display:none;}
+        .navigation-wrapper{
+            display: block;
+            top: 0;
+        }
+    </style>
+
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+        <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+                <div class="panel-main__content"> 
+                    <a href="https://riesal.github.io/" title="link to homepage for Muhammad Fahrizal Rahman"> <img src="https://eastlondonnews.co.uk/wp-content/uploads/2014/04/write-your-own-blog.jpg" width="80" alt="Muhammad Fahrizal Rahman logo" class="panel-cover__logo logo" /> </a> 
+                    <h1 class="panel-cover__title panel-title">
+                        <a href="https://riesal.github.io/"  title="link to homepage for Muhammad Fahrizal Rahman">Muhammad Fahrizal Rahman</a>
+                    </h1>
+                    <hr class="panel-cover__divider" />
+                    <p class="panel-cover__description">  just walk your talk and practice what you preach  </p>
+                    <hr class="panel-cover__divider panel-cover__divider--secondary" />
+                    <div class="navigation-wrapper">
+                        <nav class="cover-navigation cover-navigation--primary">
+                            <ul class="navigation">
+                                <li class="navigation__item"><a href="https://riesal.github.io/#blog" title="link to Muhammad Fahrizal Rahman blog" class="blog-button">Blog</a> </li></br>
+                                <li class="navigation__item"><a href="/pages/cv" title="link to my CV " class="blog-button">CV</a> </li></br> 
+				
+                           </ul>
+                        </nav> <nav class="cover-navigation navigation--social">
+    <ul class="navigation"> 
+        
+        <li class="navigation__item">
+            <a href="http://twitter.com/siriesal" title="@siriesal on Twitter"> <i class='fa fa-twitter'></i> <span class="label">Twitter</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="https://bitbucket.org/riesal" title="riesal on bitbucket"> <i class='fa fa-bitbucket'></i> <span class="label">Bitbucket</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="https://github.com/riesal" title="riesal on github"> <i class='fa fa-github'></i> <span class="label">Github</span> </a>
+        </li>  </br> 
+        
+        <li class="navigation__item">
+            <a href="http://www.flickr.com/photos/riesal/" title="riesal on flickr"> <i class='fa fa-flickr'></i> <span class="label">Flickr</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="https://www.linkedin.com/in/riesal" title="Linkedin"> <i class='fa fa-linkedin'></i> <span class="label">Linkedin</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="mailto:ask@intispace.com" title="Email ask@intispace.com"> <i class='fa fa-envelope-o'></i> <span class="label">Email</span> </a>
+        </li>  </ul>
+</nav>
+ </div>
+                </div>
+            </div>
+            <div class="panel-cover--overlay"></div>
+        </div>
+    </header>
+</noscript>
+
+        <div class="content-wrapper">
+            <div class="content-wrapper__inner">
+                <div class="post">
+                    <h1>What is Amazon CloudWatch Logs and how does it work?</h1>
+                    <span class="post-date">Thu, May 5, 2016</span>
+                    <p>Amazon CloudWatch monitors many AWS Services such as Elastic Compute Cloud (EC2), Relational Database Service, Elastic Block Storage and several others. CloudWatch alerts can identify events such as CPU spikes and latency issues. When used with AWS AutoScaling, administrators can seamlessly increase EC2 capacity as needed.</p>
+
+<p>But since its inception, Amazon CloudWatch has had some limitations. One issue was that it lacked the ability to process huge amounts of custom log data that cloud platforms create, and to react to events in near real time. CloudWatch Logs, a new feature introduced at the AWS Summit in New York last month, is an extension of CloudWatch that admins can use to detect patterns and take action to resolve issues that arise.</p>
+
+<p>With Amazon CloudWatch Logs, admins can capture any type of log &#8212; from applications, on networks, from devices and so on &#8212; and process it in Amazon Kinesis. From there, admins can then monitor application health.</p>
+
+<p>Amazon CloudWatch Logs can do everything?</p>
+
+<p>Logs provide an incredible window into problems that affect a cloud platform and act as a business intelligence resource. Many vendors, such as Loggly and Logentries, have carved out niches, offering tools that interpret AWS logs. These companies don&#8217;t appear too threatened by CloudWatch Logs, as their services are already several generations ahead in their ability to process log data, provide intelligent alerting and help AWS customers identify trends.</p>
+
+<p>With Amazon CloudWatch Logs, admins can analyze system logs to search for malicious login attempts over Secure Shell or pinpoint a botnet attempting a denial-of-service attack on the Web server. The monitoring tool looks for recurring IP patterns from your Web server logs and blocks access from attacking IP addresses. You also can query applications logs to identify customer usage patterns to improve the customer experience.</p>
+
+<p>Amazon CloudWatch Logs can identify events that are unique to your specific platform &#8212; not just the canned metrics that CloudWatch delivers. There are operating system logs, application logs, Web server logs or logs from any type of endpoint device.</p>
+
+<p>And setting up CloudWatch Logs is fairly straightforward. Simply install and configure a CloudWatch Logs agent on an EC2 instance and access results through the Amazon CloudWatch console. Costs associated with Cloudwatch Logs are $0.50 per 1 GB of ingested log data per day, plus $0.03 per GB archived per month, in addition to the cost of Amazon Kinesis.</p>
+
+<p><strong>Keep checking the <a href="http://blog.intispace.com/">intispace blog</a> for more upcoming tips on starting your own business.</strong> Also, send us a tweet <a href="https://twitter.com/intispace">@intispace</a> with your own ideas on what makes a great domain name!</p>
+
+<p><em>This article was brought to you by Intispace Netmedia, for scalable wordpress hosting visit our site here <strong><a href="https://intispace.com/">www.intispace.com</a></strong></em></p>
+
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>

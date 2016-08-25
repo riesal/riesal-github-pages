@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Kernel on Muhammad Fahrizal Rahman </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://riesal.github.io/tags/kernel/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Thu, 25 Aug 2016 15:06:28 &#43;0000</updated>
+    
+    <item>
+      <title>kgraft to Patch Ubuntu Kernel without Reboot</title>
+      <link>https://riesal.github.io/2016/08/kgraft-to-patch-ubuntu-kernel-without-reboot/</link>
+      <pubDate>Thu, 25 Aug 2016 15:06:28 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2016/08/kgraft-to-patch-ubuntu-kernel-without-reboot/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;It is simply how to allow kernel swap without needing reboot.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Article by: &lt;a href=&#34;http://dinosaursareforever.blogspot.co.id/&#34;&gt;arges&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;New live kernel patching projects have hit LKML recently&lt;a href=&#34;https://lkml.org/lkml/2014/4/30/477&#34;&gt; [1]&lt;/a&gt;&lt;a href=&#34;https://lkml.org/lkml/2014/5/1/273&#34;&gt;[2]&lt;/a&gt;, and I&amp;rsquo;ve taken the opportunity to test drive kGraft with the Ubuntu kernel. This post documents how to get a sample patch working.&lt;/p&gt;
+
+&lt;p&gt;&lt;span id=&#34;more-4512&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;A Simple Example
+First, I had to take the patches from &lt;a href=&#34;https://git.kernel.org/cgit/linux/kernel/git/jirislaby/kgraft.git/&#34;&gt; [3]&lt;/a&gt; and apply them against the ubuntu-utopic kernel, which is based on 3.15-rc8 as of this post. They cherry-picked cleanly and the branch I&amp;rsquo;m using is stored here &lt;a href=&#34;http://zinc.ubuntu.com/git?p=arges/ubuntu-utopic.git;a=shortlog;h=refs/heads/kgraft-utopic&#34;&gt; [4]&lt;/a&gt;. In addition to applying the patches I had to also enable CONFIG_KGRAFT. A pre-built test kernel can be downloaded here &lt;a href=&#34;http://people.canonical.com/~arges/kgraft-utopic/&#34;&gt; [5]&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Next, I created a test VM and installed the test kernel, headers, and build dependencies into that VM and rebooted. Now after a successful reboot, we need to produce an actual patch to test. I&amp;rsquo;ve created a github project &lt;a href=&#34;https://github.com/arges/kgraft-examples&#34;&gt; [6]&lt;/a&gt; with the sample patch; to make it easy to clone and get started.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install git build-essential
+git clone https://github.com/arges/kgraft-examples.git
+cd kgraft-examples
+make
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The code in kgraft_patcher.c is the example found in samples/kgraft [7]. Now we can build it easily using the Makefile I have in my project by typing make.&lt;/p&gt;
+
+&lt;p&gt;Next, the module needs to be inserted using the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo insmod ./kgraft_patcher.ko
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Run the following to see if the module loaded properly:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;lsmod | grep kgraft
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You&amp;rsquo;ll notice some messages printed with the following:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[  211.762563] kgraft_patcher: module verification failed: signature
+and/or  required key missing - tainting kernel [  216.800080] kgr
+failed after timeout (30), still in degraded mode [  246.880146] kgr
+failed after timeout (30), still in degraded mode [  276.960211] kgr
+failed after timeout (30), still in degraded mode&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This means that not all processes have entered the kernel and may not have a &amp;ldquo;new universe&amp;rdquo; flag set.  Run the following to see which processes still needs to be updated.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cat /proc/*/kgr_in_progress
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In order to get all processes to enter the kernel sometimes a signal needs to be sent to get the process to enter the kernel.&lt;/p&gt;
+
+&lt;p&gt;An example of this is found in the kgraft-examples [6] called &amp;lsquo;gethurry.sh&amp;rsquo;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+for p in $(ls /proc/ | grep &#39;^[0-9]&#39;); do
+  if [[ -e /proc/$p/kgr_in_progress ]]; then
+    if [[ `sudo cat /proc/$p/kgr_in_progress` -eq 1 ]]; then
+     echo $p;
+     sudo kill -SIGCONT $p
+    fi
+  fi
+done
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here is checks for all processes that have &amp;lsquo;kgr_in_progress&amp;rsquo; set and sends a SIGCONT signal to that process.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve noticed that I had to also send a SIGSTOP followed by a SIGCONT to finally get everything synced up.&lt;/p&gt;
+
+&lt;p&gt;Eventually you&amp;rsquo;ll see:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;[ 1600.480233] kgr succeeded&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now your kernel is running the new patch without rebooting!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Upgrade CentOS kernel without Reboot using Ksplice</title>
+      <link>https://riesal.github.io/2016/08/upgrade-centos-kernel-without-reboot-using-ksplice/</link>
+      <pubDate>Wed, 24 Aug 2016 18:04:28 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2016/08/upgrade-centos-kernel-without-reboot-using-ksplice/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;It is simply how to allow kernel swap without needing reboot.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Generally, all Linux distributions needs a scheduled reboot once to stay up to date with important kernel security updates. RHN (or other distro vendors) provides Linux kernel security updates.&lt;/p&gt;
+
+&lt;p&gt;&lt;span id=&#34;more-4512&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;You can apply kernel updates using yum command or apt-get command line options. After each upgrade you need to reboot the server. Ksplice service allows you to skip reboot step and apply hotfixes to kernel without rebooting the server. In this post I will cover a quick installation of Ksplice for RHEL 5.x and try to find out if service is worth every penny.&lt;/p&gt;
+
+&lt;p&gt;The technology and hack behind this looks pretty cool. This is useful if you’ve a small number of Linux based servers and/or you want avoid unscheduled reboot just to apply hotfix to Linux kernel.&lt;/p&gt;
+
+&lt;p&gt;How Do I Install Ksplice?&lt;/p&gt;
+
+&lt;p&gt;First, you need to register with Ksplice. Type the following command to install rpm repo under RHEL 5:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rpm -ivh https://www.ksplice.com/yum/uptrack/centos/ksplice-uptrack-release.noarch.rpm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To install Ksplice, enter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;yum install uptrack
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Edit /etc/uptrack/uptrack.conf, enter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;vi /etc/uptrack/uptrack.conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Update it as follows (input your access key):&lt;/p&gt;
+
+&lt;p&gt;[Auth]&lt;/br&gt;
+accesskey = ADD-YOUR-ACCESS-KEY-HERE&lt;/br&gt;
+[Network]&lt;/br&gt;
+https_proxy = &lt;/br&gt;
+[Settings]&lt;/br&gt;
+install_on_reboot = yes&lt;/br&gt;
+autoinstall = no&lt;/br&gt;
+cron_output_install = no&lt;/br&gt;
+cron_output_available = no&lt;/br&gt;
+cron_output_error = no&lt;/br&gt;&lt;/p&gt;
+
+&lt;p&gt;Save and close the file.&lt;/p&gt;
+
+&lt;p&gt;How Do I Apply Rebootless Kernel Updates?
+You need to first download and apply updates via RHN:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;yum -y update
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;OR&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;yum update kernel kernel-headers kernel-devel
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Don’t reboot the box, simply type the following command to apply hotfix:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;uptrack-upgrade
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To see a list of updates that are currently installed, enter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;uptrack-show -y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sample Email Notification
+You will get an email as follows when updates are available:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://s0.cyberciti.org/uploads/tips/2010/04/ksplice-rhel-update-email.png&#34; alt=&#34;Fig.01: Ksplice Update Notification&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The web interface also provides information about your server and installed kernel updates:
+&lt;img src=&#34;http://s0.cyberciti.org/uploads/tips/2010/04/uptrack-web-interface.png&#34; alt=&#34;Fig.02: Uptrack Web Interface&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Conclusion&lt;/p&gt;
+
+&lt;p&gt;The pricing is as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Monthly price per system First 20 servers : $3.95&lt;/li&gt;
+&lt;li&gt;Beyond 20 servers: $2.95&lt;/li&gt;
+&lt;li&gt;Currently it is free for all Ubuntu users.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ksplice is a pretty good and stable software. This is useful for Linux admin or business who can not accept downtime for patching. A few business comes in my mind:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Small shop, say 8-12 Linux based servers.&lt;/li&gt;
+&lt;li&gt;Pro-blogging or webmaster servers (a typical setup included one web
+server and one db server). Avoiding downtime means more ad revenue
+for webmasters.&lt;/li&gt;
+&lt;li&gt;Hosting companies – again avoiding downtime means good customer
+satisfactions and less work for sys admins. If you run VM based
+hosting (OpenVZ or XEN based vps) you can avoid downtime too.&lt;/li&gt;
+&lt;li&gt;Small cluster of Linux system, say 6 system – If cluster is using 80%
+of capacity and if one of node rebooted for kernel upgrade, load will
+up for rest of 5 systems. In such case, this service can help to keep
+load under control without rebooting the box. However, this is NOT
+very useful for very large Linux based cluster redundant
+load-balanced servers, routers, switches, firewalls etc. Since your
+cluster is so large that 4-5 servers failing makes no difference to
+the remaining nodes. In some cases it is possible to do geo load
+balancing too.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But I’ve HA Failover Solution In Place…
+100% uptime depends upon lots of factors and and HA solution handles hardware or other failures very well. However, &lt;em&gt;Ksplice service is not all about 100% uptime&lt;/em&gt;, &lt;strong&gt;it is about not rebooting your server for a Linux kernel upgrade&lt;/strong&gt;. You can easily combine Ksplice with HA solution (such as keepalived+nginx reverse proxy) and try to get perfect five 9s. I highly recommend this service for small to medium size business or professional webmasters.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

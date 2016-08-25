@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Ssl on Muhammad Fahrizal Rahman </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://riesal.github.io/categories/ssl/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Thu, 21 May 2015 12:44:21 &#43;0000</updated>
+    
+    <item>
+      <title>Say Goodbye to SSL Version 3.0</title>
+      <link>https://riesal.github.io/2015/05/say-goodbye-to-ssl-version-3-0/</link>
+      <pubDate>Thu, 21 May 2015 12:44:21 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2015/05/say-goodbye-to-ssl-version-3-0/</guid>
+      <description>
+
+&lt;p&gt;It is no secret that securing your client’s data is an ongoing process and not something that you can simply install on a server/platform. That is why security solutions and protocols evolve all the time and developers frequently release new versions. The two cryptographic protocols that provide communication security over the Internet are TLS and SSL. The latest version of Secure Sockets Layer (SSL version 3.0) is the predecessor of TLS and is nearly 15 years old. So it was only a matter of time for someone to find the next big issue related to the SSL protocol. Yesterday Bodo Möller from the Google Security Team wrote &lt;a href=&#34;http://googleonlinesecurity.blogspot.co.uk/2014/10/this-poodle-bites-exploiting-ssl-30.html&#34; target=&#34;_blank&#34;&gt;a blog post&lt;/a&gt; about a new vulnerability in the design of SSL version 3.0. The vulnerability allows attackers to calculate the plain text of secure connections.&lt;/p&gt;
+
+&lt;p&gt;&lt;span id=&#34;more-7162&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;possible-fixes&#34;&gt;Possible Fixes:&lt;/h3&gt;
+
+&lt;p&gt;There are two ways to protect yourself. The first and best way to mitigate this problem is to completely disable SSL version 3.0 on all of your servers and also remove SSL 3.0 support from all client products. For example, Google officially announced in the same blog post that in the coming months they will remove SSL version 3.0 support from all of their client products (including the Google Chrome browser). Cloudflare and Sucuri already stopped supporting it. All other major browsers will also disable SSLv3 by default (Firefox version 34 will be released on Nov 25).&lt;/p&gt;
+
+&lt;p&gt;The second solution is to support &lt;a href=&#34;https://tools.ietf.org/html/draft-ietf-tls-downgrade-scsv-00&#34; target=&#34;_blank&#34;&gt;TLS_FALLBACK_SCSV&lt;/a&gt;. This is a solution which prevents attackers from tricking browsers to use the old SSLv3 protocol instead of the TLS protocol. However, this solution is difficult to implement (many people will need to manually compile custom version of openssl) and it is only a new patch which solves this issue but does not provide any guarantees that SSLv3 won’t become vulnerable again a week from now.&lt;/p&gt;
+
+&lt;h3 id=&#34;our-solution&#34;&gt;Our Solution:&lt;/h3&gt;
+
+&lt;p&gt;Based on a detailed analysis of our network and the traffic towards our servers we decided to completely remove SSL version 3.0 support. As a matter of fact, a big portion of our servers have already been configured to support only the TLS encryption protocol and we’re in the process of reconfiguring all machines that are part of our infrastructure.&lt;/p&gt;
+
+&lt;h3 id=&#34;possible-issues&#34;&gt;Possible Issues:&lt;/h3&gt;
+
+&lt;p&gt;We know that some web applications still use SSLv3. Let’s say that for example a developer has decided to configure his/her PHP app to use SSLv3 via the CURLOPT_SSLVERSION option. Unfortunately, if such application connects to our servers, the connection will not be established and the developer will need to patch the code of the app. Our analysis shows that less than 0.05% of all traffic towards our servers is SSLv3. Thus, we do not expect such issues to occur, but we still encourage our customers to contact us via our Helpdesk if they notice any SSL-related issues.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How Does SSL Protect My Website?</title>
+      <link>https://riesal.github.io/2015/05/how-does-ssl-protect-my-website/</link>
+      <pubDate>Sun, 17 May 2015 17:12:19 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2015/05/how-does-ssl-protect-my-website/</guid>
+      <description>&lt;p&gt;One of the most economical and secure ways to protect your website on affordable hosting platforms is to deploy a private Secure Socket Layer (SSL) on you’re your website giving the instant ability to roll out protected URLs like &lt;a href=&#34;https://www.mysite.com/&#34;&gt;https://www.mysite.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are still in doubt as to what an SSL actually does consider this explanation from &lt;a href=&#34;http://www.symantec.com/theme.jsp?themeid=how-ssl-works&#34;&gt;Symantec&lt;/a&gt; on the digital handshake that takes place between a browser and a server:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;A browser attempts to connect to a website secured with SSL.&lt;/li&gt;
+&lt;li&gt;The browser requests that the web server identify itself.&lt;/li&gt;
+&lt;li&gt;The server sends the browser a copy of its SSL certificate.&lt;/li&gt;
+&lt;li&gt;The browser checks whether it trusts the SSL certificate. If so, it sends a message to the server.&lt;/li&gt;
+&lt;li&gt;The server sends back a digitally signed acknowledgement to start an SSL 7 encrypted session.&lt;/li&gt;
+&lt;li&gt;Encrypted data is shared between the browser and the server&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Your site receives a permanent “security guard” which protects users in an online transaction, and encrypts data during transmission giving you, said Symantec, a “trillion year head start over a hacker.”&lt;/p&gt;
+
+&lt;p&gt;“At current computing speeds, a hacker with the time, tools, and motivation to attack using brute force would require a trillion years to break into a session protected by an SGC-enabled certificate,” said Symantec.&lt;/p&gt;
+
+&lt;p&gt;“To enable strong encryption for the most site visitors, choose an SSL Certificate that enables 128-bit minimum encryption for 99.9 percent of website visitors.”&lt;/p&gt;
+
+&lt;p&gt;But there are other benefits, too, including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Credentials establish identity online&lt;/li&gt;
+&lt;li&gt;Authentication generates trust in credential&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SSL certificates on Intispace platforms are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Signed by Comodo, Geotrust, RapidSSL, Certum, Thawte, Symantec&lt;/li&gt;
+&lt;li&gt;99.3% compatibility with browsers&lt;/li&gt;
+&lt;li&gt;256-bit encryption&lt;/li&gt;
+&lt;li&gt;Lock appears in browser&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shifting To An Encrypted Internet</title>
+      <link>https://riesal.github.io/2015/05/shifting-to-an-encrypted-internet/</link>
+      <pubDate>Wed, 13 May 2015 18:59:46 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2015/05/shifting-to-an-encrypted-internet/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Two thirds of all North American internet traffic will be encrypted by 2016, according to a new report by Sandvine, the Canadian-based software company. The reason behind it? Netflix.&lt;/strong&gt;&lt;span id=&#34;more-1596&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Due to more and more sites using HTTPS encryption to protect confidential user information such as credit card numbers and other personal data, the days of having every website on the internet encrypted may not be far off.&lt;/p&gt;
+
+&lt;p&gt;One of the world’s most visited sites is now making the switch to an &lt;a href=&#34;http://gizmodo.com/how-to-encrypt-everything-1586619248&#34;&gt;encrypted connection&lt;/a&gt;. Netflix has announced it will soon follow other internet giants such as Google and Amazon in making its services fully encrypted.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;So what is HTTP and HTTPS encryption?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hypertext Transfer Protocol (HTTP) is the method by which files are transferred throughout the World Wide Web. This protocol determines how browsers and web servers send information back and forth.&lt;/p&gt;
+
+&lt;p&gt;HTTPS adds protection to a typical HTTP. The additional ‘S’ is for &lt;a href=&#34;http://www.westhost.com/blog/2015/02/11/what-is-ssl-and-do-i-need-it-for-my-site/#.VUuY6I5VhHw&#34;&gt;Secure Socket Layer (SSL)&lt;/a&gt;. This added layer encrypts all of the data that is sent between a browser and a server. In other words if a hacker were to look at the HTTPS-protected files being sent between a browser and a server, all they would see is lines of garbage code.&lt;/p&gt;
+
+&lt;p&gt;This greatly protects a visitor if they’re submitting any personal information on a website. There is a trend of  some sites switching over to a HTTPS connection in order to up their level of security.&lt;/p&gt;
+
+&lt;p&gt;If you want to know if the site you’re visiting is protected with SSL, take a look at the address bar. If you see a little green padlock or https:// before the web address, you’re on a site that is encrypted.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;HTTPS around the web&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Sandvine &lt;a href=&#34;https://www.sandvine.com/pr/2015/4/30/sandvine-two-thirds-of-north-american-internet-traffic-will-be-encrypted-in-2016.html&#34;&gt;conducted research showing that&lt;/a&gt; 65% of the internet’s current traffic is not encrypted. This will all change once Netflix makes the change later this year. One of the leaders in streaming services already accounts for about one third of North America’s internet traffic, meaning the change will make the majority of traffic encrypted.&lt;/p&gt;
+
+&lt;p&gt;Reed Hastings, CEO of Netflix, said, “[Netflix] is making the move to protect member privacy, particularly when the network is insecure, such as public WI-FI, and it helps protect members from eavesdropping by their ISP or employer, who may want to record our members’ viewing for other reasons.”.&lt;/p&gt;
+
+&lt;p&gt;This is a trend that most people predict will continue to grow. Google (including YouTube) already encrypts all of its pages, which accounts for a very large portion of the internet. Most e-commerce sites use HTTPS to protect their customers’ confidential information.&lt;/p&gt;
+
+&lt;p&gt;The CTO of Sandvine, Don Bowman, said, “The decision by leading applications to encrypt their traffic is great for subscribers because it ensures the content of their internet traffic remains private.”.&lt;/p&gt;
+
+&lt;p&gt;Expect to see more business owners choosing to encrypt their sites. Although you generally have to pay a little extra for the &lt;a href=&#34;http://www.midphase.com/blog/how-does-an-ssl-protect-my-website/&#34;&gt;SSL certificate,&lt;/a&gt; most agree that it’s well worth the price for the added protection.&lt;/p&gt;
+
+&lt;p&gt;Send us a tweet &lt;a href=&#34;https://twitter.com/intispace&#34;&gt;@intispace&lt;/a&gt; with your own ideas on what makes a great blog with SSL!&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;This article was brought to you by Intispace Netmedia, for scalable wordpress hosting visit our site here &lt;a href=&#34;https://intispace.com&#34;&gt;www.intispace.com&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>How To Measure Your Websites Page Load Time on Muhammad Fahrizal Rahman </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://riesal.github.io/tags/how-to-measure-your-websites-page-load-time/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Mon, 25 May 2015 00:00:04 &#43;0000</updated>
+    
+    <item>
+      <title>How To Measure Your Website’s Page Load Time</title>
+      <link>https://riesal.github.io/2015/05/how-to-measure-your-websites-page-load-time/</link>
+      <pubDate>Mon, 25 May 2015 00:00:04 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2015/05/how-to-measure-your-websites-page-load-time/</guid>
+      <description>
+
+&lt;p&gt;When assessing the effectiveness of CDN, W3 Total Cache or any other WordPress caching plugin, it’s important that you are able to correctly measure the page loading time of your website.&lt;/p&gt;
+
+&lt;p&gt;There are several tools available for How To Measure Your Website’s Page Load Time. Our favorite, and the one we think is most accurate, is Pingdom.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-to-use-pingdom&#34;&gt;How To Use Pingdom&lt;/h2&gt;
+
+&lt;div class=&#34;alert info&#34;&gt;
+  Visit: &lt;a href=&#34;http://tools.pingdom.com/&#34; target=&#34;_blank&#34;&gt;http://tools.pingdom.com/&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Click Settings and choose the location closest to your web server, not your own physical location. Paste in your website URL and click Test Now.&lt;span id=&#34;more-283&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Pingdom will summarize your web page performance at the top with 4 metrics:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Performance grade.&lt;/li&gt;
+&lt;li&gt;Requests.&lt;/li&gt;
+&lt;li&gt;Load time.&lt;/li&gt;
+&lt;li&gt;Page size.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img class=&#34;aligncenter size-full wp-image-286  lazyautosizes lazyloaded&#34; src=&#34;http://cdn.wp-rocket.me/wp-content/uploads/4/Website-speed-test-1.jpg&#34; alt=&#34;Pindgom website speed test&#34; width=&#34;639&#34; height=&#34;553&#34; data-lazy-src=&#34;http://cdn.wp-rocket.me/wp-content/uploads/4/Website-speed-test-1.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Of these metrics, the most important is load time!&lt;/p&gt;
+
+&lt;p&gt;The grade is a general guideline of how well your site is optimized, but it’s not important to get a perfect score there.&lt;/p&gt;
+
+&lt;p&gt;The speed at which your site loads is really the only number that matters. When Google is visiting your site, it does not care or know about the performance grade, only the loading time.&lt;/p&gt;
+
+&lt;h2 id=&#34;getting-an-accurate-average&#34;&gt;Getting An Accurate Average&lt;/h2&gt;
+
+&lt;p&gt;You should run the test several times to get an average loading time since it will not be identical every time.&lt;/p&gt;
+
+&lt;p&gt;If you have just added caching to your site, or have changed any options in your caching plugin, the first time a visitor (including a Pingdom bot) hits your page (unless it’s been preloaded), they will get a non-cached version of the page. That visit causes the cache to be generated, so the next visitor will get the faster, cached version.&lt;/p&gt;
+
+&lt;p&gt;So when you run the speed test, the first result could possibly be on a non-cached version of your page which is why it’s important to run the test a few times.&lt;/p&gt;
+
+&lt;p&gt;Intispace + Cloudflare will preload the homepage of your site and the pages linked from it when you either manually click the Preload button, when the cache has expired or when you create or update a post.&lt;/p&gt;
+
+&lt;p&gt;Additionally, when you create/update content the cache is deleted and preloaded a few seconds later for associated content such as category and tag archive pages.&lt;/p&gt;
+
+&lt;p&gt;If you simply use the Clear Cache feature or just save the settings, the preload won’t get triggered. So either trigger it manually, or just visit your website to generate the cache.&lt;/p&gt;
+
+&lt;p&gt;Most people only test the homepage of their site which typically has a lot more content on it than a regular page or post. So consider testing various types of content on your site to get a more well-rounded view of how fast your site is as a whole.&lt;/p&gt;
+
+&lt;p&gt;On many websites, visitors finding the site from a search engine will enter your site on a blog post or individual page, not necessarily the homepage, so the performance of all pages needs to be fast. You’ll probably find that those internal posts/pages load faster than your homepage.&lt;/p&gt;
+
+&lt;h2 id=&#34;benchmarking&#34;&gt;Benchmarking&lt;/h2&gt;
+
+&lt;p&gt;To really see how much improvement you’re getting from your caching plugin you need to benchmark your site without any caching plugins first by running the above tests and taking an average page load time.&lt;/p&gt;
+
+&lt;p&gt;Then add your caching plugin with its most basic configuration and run the tests a few more times to get a comparison.&lt;/p&gt;
+
+&lt;p&gt;Any time you activate a new option in the plugin you need to see if it has an impact – for better or worse, so you need to test each change that you make, in the above manner.&lt;/p&gt;
+
+&lt;p&gt;A lot of people turn on W3 Total Cache for example and enable ALL the additional options but find some slowness. This could be because additional options such as minification and others have the potential to conflict with themes, plugins and server configurations and should be used cautiously. They are not always necessary. Just turning on the plugin will give you the most significant speed boost. The additional options are just that – optional. They are not always necessary and should always be tested to see if they are giving you additional improvements.&lt;/p&gt;
+
+&lt;p&gt;Testing after every change lets you isolate a particular feature that may be causing an issue. This is true of W# Total Cache or any of the other caching plugins you may use.&lt;/p&gt;
+
+&lt;p&gt;Also, make sure you don’t have multiple caching plugins running at once. For example, even if WP Super Cache is installed but not activated, it can still interfere so it needs to be fully deleted before testing a different plugin.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-waterfall-chart&#34;&gt;The Waterfall Chart&lt;/h2&gt;
+
+&lt;p&gt;The waterfall shows you the loading time of each component of your page – all the various image files, CSS, Javascript files etc that are loaded each time someone visits your page.&lt;/p&gt;
+
+&lt;p&gt;If you are using a caching plugin such as W3 Total Cache you should be getting a fast loading time, but the waterfall chart can help you identify any bottlenecks or problematic files. Sometimes it only takes a couple of large images or external scripts to drag down the loading time of your page.&lt;/p&gt;
+
+&lt;p&gt;Click on the dropdown at the top of the waterfall and choose “Sort By Load Time”. This will show you the longest loading files at the top, making problem files easy to spot.&lt;/p&gt;
+
+&lt;p&gt;External scripts such as those from third party ad servers etc are probably your biggest enemy here. Since those scripts are not coming from your server there is no caching you can do on them – you are at the mercy of their server. You can see that in this example:&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;size-full wp-image-285 aligncenter  lazyautosizes lazyloaded&#34; src=&#34;http://cdn.wp-rocket.me/wp-content/uploads/4/sort-by-load-time.jpg&#34; alt=&#34;Pingdom - Sort By Load Time&#34; width=&#34;639&#34; height=&#34;114&#34; data-lazy-src=&#34;http://cdn.wp-rocket.me/wp-content/uploads/4/sort-by-load-time.jpg&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

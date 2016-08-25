@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Optimizing Jetpack on Muhammad Fahrizal Rahman </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://riesal.github.io/tags/optimizing-jetpack/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Thu, 21 May 2015 12:35:10 &#43;0000</updated>
+    
+    <item>
+      <title>Optimizing Jetpack!</title>
+      <link>https://riesal.github.io/2015/05/optimizing-jetpack/</link>
+      <pubDate>Thu, 21 May 2015 12:35:10 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2015/05/optimizing-jetpack/</guid>
+      <description>&lt;div class=&#34;grid-col span12&#34;&gt;
+  Jetpack remains a polarizing plugin amongst developers so it’s not often discussed on developer-oriented blogs. The plugin has a history filled with bloat, slowness, and conflicts with other plugins. Admittedly, I myself have a love/hate relationship with it.
+&lt;/div&gt;
+
+&lt;div class=&#34;grid-col span12&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;grid-col span12&#34;&gt;
+  However, recently, it’s been improved so much that I feel comfortable recommending it for some users. It’s now truly modularized, allowing complete control over which features are activated, and much more stable. My biggest pet peeve will always be the way you have to connect to WordPress.com to use it. I understand all the technical reasons for that, but it’s a terrible user experience that is very confusing (especially for novice WordPress users).
+&lt;/div&gt;
+
+&lt;div class=&#34;grid-col span7&#34;&gt;
+  &lt;div class=&#34;post-content&#34;&gt;
+    &lt;p&gt;
+      With all that said, why is Optimizing Jetpack making an appearance here? The fact is if you can get past the clunky activation, Jetpack offers a great suite of features for the average blogger. But, in keeping with the WordPress philosophy of “decisions not options”, as an end user, you don’t have many configuration settings compared to all the options you would get if you used a similar standalone plugin.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      Fortunately, the code has been sprinkled with actions and filters for developers. So, while Jetpack is generally marketed to entry-level end users, there are actually some nice Easter eggs for developers who want to customize things a little bit for their clients −I call them Easter eggs because the ability to customize Jetpack hasn’t really been highlighted or documented too much. There has yet to be a complete resource that documents all of filters and actions available (I’ll give just a few examples here), but you can dig through the code looking for add_filter and add_action to find more. The &lt;a href=&#34;https://github.com/Automattic/jetpack&#34;&gt;code can be found on GitHub&lt;/a&gt; for easy reading (and if you want to contribute).
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      This article assumes you have some experience with development or at least are not afraid to work with code, even if it’s just copy/pasting snippets (hey, we all start out like that!). Here’s just a handful of ways you can tweak Jetpack.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Ditch That WordPress.com Connection…&lt;br /&gt; &lt;/strong&gt;Optimizing Jetpack! …Well, almost. You can actually use Jetpack without connecting to WordPress.com, at least partially. Some of the modules will work fine without the connection whereas some will remain unavailable. This comes handy when you are working on a local installation or even a production site if you’re only using certain modules.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      Add the following to your wp-config.php file to use development mode:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;define( ‘JETPACK_DEV_DEBUG’, true);&lt;/pre&gt;
+    
+    &lt;h4&gt;
+      &lt;strong&gt;Customization Best Practices&lt;/strong&gt;
+    &lt;/h4&gt;
+    
+    &lt;p&gt;
+      Optimizing Jetpack! When customizing Jetpack, there are a couple of things to keep in mind:
+    &lt;/p&gt;
+    
+    &lt;ul&gt;
+      &lt;li&gt;
+        Your customizations will generally be achieved by writing your own functions, so make sure to use &lt;strong&gt;unique function names&lt;/strong&gt; to avoid collision with any other plugin. I’ll prefix all mine with ‘wtwlb’ (wtw for WebTrainingWheels, lb for my initials) in these examples.
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;ul&gt;
+      &lt;li&gt;
+        Customizations can either be done in your theme, the child theme’s functions.php and template files, or via a ‘&lt;a href=&#34;https://css-tricks.com/wordpress-functionality-plugins/&#34;&gt;functionality plugin&lt;/a&gt;’. This is a simple plugin that contains anything you would otherwise paste in functions.php and it is advantageous because it’s theme-independent. If you plan on using the Jetpack mobile theme and customizing it, you will need to do it this way.
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Customize The Sharing Module&lt;br /&gt; &lt;/strong&gt;The sharing module in Jetpack is popular as it’s a pain-free way to add the most popular social share buttons to your content. Yet there are a couple of limitations.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Change Button Placement&lt;br /&gt; &lt;/strong&gt;By default, Jetpack lets you choose on what content (posts, pages, homepage, etc.) you want the buttons to appear, but it automatically places the buttons at the bottom of the content. A common request is to add the buttons at the top as well as (or instead of) at the bottom. This is really easy to do.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      The icons are placed using a filter on the WordPress tags for the_content and the _excerpt:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;add_filter( ‘the_content’, ‘sharing_display’, 19 );
+ add_filter( ‘the_excerpt’, ‘sharing_display’, 19 );&lt;/pre&gt;
+    
+    &lt;p&gt;
+      Removing either of those placements would be a matter of writing a small function to remove the appropriate filter. To remove it from the_content, and, therefore, from the bottom of the post, for example, the below would work:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;function wtwlb_remove_share() {
+ remove_filter (‘the_content’, ‘sharing_display’, 19 ); }
+ add_action (‘loop_start’, ‘wtwlb_remove_share’);&lt;/pre&gt;
+    
+    &lt;p&gt;
+      Then you can use the following in your functionality plugin to place the buttons at the top of the post:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;function wtwlb_move_jpshare( $content = ” ) {
+ if ( function_exists( ‘sharing_display’ ) ) {
+ return sharing_display() . $content;
+ }
+ else {&lt;/pre&gt;
+    
+    &lt;pre&gt;return $content;
+ }
+ }
+ add_filter( ‘the_content’, ‘wtwlb_move_jpshare’, 19 );&lt;/pre&gt;
+    
+    &lt;p&gt;
+      If you want to manually place the buttons elsewhere in your custom theme or child theme’s template files, you can use the following wherever you want the buttons to appear:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;if ( function_exists( ‘sharing_display’ ) ) {
+ sharing_display( ”, true );
+ }&lt;/pre&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Remove the Counter&lt;br /&gt; &lt;/strong&gt;Optimizing Jetpack! By default, Jetpack will show the sharing counts on the buttons. If you’d like to prevent that, you can do so with one line:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;add_filter( ‘jetpack_sharing_counts’, ‘__return_false’ );&lt;/pre&gt;
+    
+    &lt;p&gt;
+      &lt;img class=&#34;alignnone wp-image-14063&#34; src=&#34;http://s1.mt-cdn.net/blog/wp-content/uploads/2015/05/markuppicture.png&#34; alt=&#34;markuppicture&#34; width=&#34;700&#34; height=&#34;314&#34; /&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Style The Icons&lt;br /&gt; &lt;/strong&gt;Optimizing Jetpack! There’s no fancy trick to styling Jetpack sharing buttons. You can radically change the look with pure CSS in your child theme. The icons themselves are Genericons (an icon font), making them easy to manipulate the color, size, etc.
+    &lt;/p&gt;
+    
+    &lt;h4&gt;
+       &lt;strong&gt;Customize Related Posts&lt;/strong&gt;
+    &lt;/h4&gt;
+    
+    &lt;p&gt;
+      Optimizing Jetpack! Showing related content is a great feature to keep readers on your site, but some WordPress plugins that do this can be slow and inefficient. Jetpack offloads the intensive processing work to its WordPress.com servers, allowing for a nimble Related Posts feature. By default, you only have two options to customize:
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;img class=&#34;alignnone wp-image-14064&#34; src=&#34;http://s1.mt-cdn.net/blog/wp-content/uploads/2015/05/customizerelatedposts.png&#34; alt=&#34;customizerelatedposts&#34; width=&#34;700&#34; height=&#34;295&#34; /&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      So, here are a few handy tweaks you can make:
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Customize the Number of Posts&lt;br /&gt; &lt;/strong&gt;By default, the module displays three posts. You can change that with the function below. For example, this will set the number of posts to four:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;function wtwlb_jpmore_related_posts( $options ) {
+ $options[‘size’] = 4;
+ return $options;
+ }
+ add_filter( ‘jetpack_relatedposts_filter_options’, ‘wtwlb_jpmore_related_posts’ );&lt;/pre&gt;
+    
+    &lt;p&gt;
+      Since I want four posts in a row and the module style is based on three, I’ll need to tweak the CSS to accommodate. Here I set the width of each to 25% instead of 33%:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post {
+ width: 25%;
+ }&lt;/pre&gt;
+    
+    &lt;pre&gt;div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post:nth-child(3n+4),
+ div#jp-relatedposts div.jp-relatedposts-items-visual .jp-relatedposts-post:nth-child(3n+4) {
+ clear: none;
+ }&lt;/pre&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Change the Headline&lt;br /&gt; &lt;/strong&gt;The default headline for the related posts section is simply “Related”. In this snippet, we’ll change that to “Recommended Posts”:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;function wtwlb_related_posts_headline( $headline ) {
+ $headline = sprintf(
+ ‘&amp;lt;h3 class=”jp-relatedposts-headline”&amp;gt;&amp;lt;em&amp;gt;%s&amp;lt;/em&amp;gt;&amp;lt;/h3&amp;gt;’,
+ esc_html( ‘Recommended Posts’ )
+ );
+ return $headline;
+ }
+ add_filter( ‘jetpack_relatedposts_filter_headline’, ‘wtwlb_related_posts_headline’ );&lt;/pre&gt;
+    
+    &lt;p&gt;
+      This is how it looks by default:
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;img class=&#34;alignnone wp-image-14069&#34; src=&#34;http://s1.mt-cdn.net/blog/wp-content/uploads/2015/05/headlinechange.png&#34; alt=&#34;headlinechange&#34; width=&#34;700&#34; height=&#34;552&#34; /&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      And with the two changes above:
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;img class=&#34;alignnone wp-image-14070&#34; src=&#34;http://s1.mt-cdn.net/blog/wp-content/uploads/2015/05/twochangesheadline.png&#34; alt=&#34;twochangesheadline&#34; width=&#34;700&#34; height=&#34;294&#34; /&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Change Thumbnail Size&lt;br /&gt; &lt;/strong&gt;If you’d like to change the dimensions of the thumbnails that go with each related post, you can use the following. In this example, I’m making the images square, i.e. 125 x125:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;function wtwlb_jp_image_size ( $thumbnail_size ) {
+ $thumbnail_size[‘width’] = 125;
+ $thumbnail_size[‘height’] = 125;
+ return $thumbnail_size;
+ }
+ add_filter( ‘jetpack_relatedposts_filter_thumbnail_size’, ‘wtwlb_jp_image_size’ );&lt;/pre&gt;
+    
+    &lt;p&gt;
+      You can find a slew of other tweaks like this here: &lt;a href=&#34;http://jetpack.me/support/related-posts/customize-related-posts/&#34;&gt;http://jetpack.me/support/related-posts/customize-related-posts/&lt;/a&gt;
+    &lt;/p&gt;
+    
+    &lt;h4&gt;
+      &lt;strong&gt;Customize The Mobile Theme&lt;/strong&gt;
+    &lt;/h4&gt;
+    
+    &lt;p&gt;
+      The mobile theme included in Jetpack is clean and functional, but, again, a little short on options. It’s not going to look like your desktop theme right out of the box, but it can be styled quite easily.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Create Custom Mobile Styles&lt;br /&gt; &lt;/strong&gt;There are a couple options to apply styling to the mobile theme. Remember, because it’s a separate theme, you cannot add your styling to your regular desktop theme style.css because that’s not going to be loaded on mobile.
+    &lt;/p&gt;
+    
+    &lt;ol&gt;
+      &lt;li&gt;
+        For an easy way to include custom CSS, I like to use a plugin called &lt;a href=&#34;https://wordpress.org/plugins/simple-custom-css/&#34;&gt;Simple Custom CSS&lt;/a&gt;. It just provides a box for you to enter your CSS and have it apply regardless of the theme. It’s perfect for these sort of cases. To target styles specifically within the mobile theme, just make sure to use the class: .mobile-theme
+      &lt;/li&gt;
+      &lt;li&gt;
+        Create a separate style sheet and enqueue it. This could be particularly useful if you want to keep your custom CSS out of the dashboard where an over-zealous client might get their hands on it.
+      &lt;/li&gt;
+    &lt;/ol&gt;
+    
+    &lt;p&gt;
+      Here’s the code you’d need to do that:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;// Check if we are on mobile
+ function jetpackme_is_mobile() {&lt;/pre&gt;
+    
+    &lt;pre&gt;// Are Jetpack Mobile functions available?
+ if ( ! function_exists( ‘jetpack_is_mobile’ ) )&lt;/pre&gt;
+    
+    &lt;pre&gt;return false;&lt;/pre&gt;
+    
+    &lt;pre&gt;// Is Mobile theme showing?
+ if ( isset( $_COOKIE[‘akm_mobile’] ) &amp;&amp; $_COOKIE[‘akm_mobile’] == ‘false’ )
+ return false;&lt;/pre&gt;
+    
+    &lt;pre&gt;return jetpack_is_mobile();
+ }&lt;/pre&gt;
+    
+    &lt;pre&gt;// On mobile? Enqueue your custom style sheet
+ if ( jetpackme_is_mobile() ) {
+ add_action( ‘wp_enqueue_scripts’, ‘wtwlb_jetpackme_mobile_css’ );
+ }&lt;/pre&gt;
+    
+    &lt;pre&gt;// Build the function
+ function wtwlb_jetpackme_mobile_css() {&lt;/pre&gt;
+    
+    &lt;pre&gt;wp_enqueue_style( ‘mobile-style’, plugins_url( ‘mobile-style.css’, __FILE__ ), array(‘style’), ‘1’, ‘all’ );
+ }&lt;/pre&gt;
+    
+    &lt;p&gt;
+      In this case, I have created a mobile specific style sheet called mobile-style.css, which will be saved in the same folder as my functionality plugin.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Mobile Specific Widgets&lt;br /&gt; &lt;/strong&gt;Optimizing Jetpack! Presently, there isn’t an elegant way to have mobile-specific widgets using the Jetpack mobile theme. But here’s a method that will work.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      By default, the mobile theme will look in your main theme for a sidebar registered with the ID: sidebar-1 and it will use that at the bottom of your mobile theme. If your theme does not have a sidebar with that ID, you won’t have any widgets unless you register one for this purpose.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      Assuming you do have that sidebar, by default all widgets in it will show on mobile. But if you want to control that and only show certain ones on mobile, you can use a plugin called &lt;a href=&#34;https://wordpress.org/plugins/widget-logic/&#34;&gt;Widget Logic&lt;/a&gt;. It gives you a field on each widget to specify conditions on which to show it. Here you can tap into a cool Jetpack function to designate the widget to show up only on mobile. On the widgets you want to show on mobile devices, enter:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;jetpack_is_mobile()&lt;/pre&gt;
+    
+    &lt;p&gt;
+      For those widgets you only want on desktop, enter:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;!jetpack_is_mobile()&lt;/pre&gt;
+    
+    &lt;p&gt;
+      &lt;img class=&#34;alignnone wp-image-14072&#34; src=&#34;http://s2.mt-cdn.net/blog/wp-content/uploads/2015/05/jetpackismobile.png&#34; alt=&#34;jetpackismobile&#34; width=&#34;700&#34; height=&#34;738&#34; /&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &amp;nbsp;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      Further reading:&lt;br /&gt; &lt;a href=&#34;https://github.com/jeremyfelt/Hooks-in-Jetpack&#34;&gt;A partial list of hooks in Jetpack&lt;br /&gt; &lt;/a&gt;&lt;a href=&#34;http://jetpack.me/support/&#34;&gt;Official Jetpack documentation&lt;br /&gt; &lt;/a&gt;&lt;a href=&#34;http://jetpack.me/support/jetpack-for-developers/&#34;&gt;Jetpack developers’ page&lt;br /&gt; &lt;/a&gt;&lt;a href=&#34;http://jetpack.me/2013/06/27/customize-mobile-theme/&#34;&gt;Customizing the mobile theme&lt;/a&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      Hopefully, this will entice you to dig deeper into the capabilities of Jetpack. Have you done something cool with Jetpack? Share it in the comments!
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

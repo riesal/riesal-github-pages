@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Get The Aws Ec2 Instance Metadata on Muhammad Fahrizal Rahman </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://riesal.github.io/tags/get-the-aws-ec2-instance-metadata/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Thu, 21 Jul 2016 16:06:47 &#43;0000</updated>
+    
+    <item>
+      <title>Get the AWS EC2 instance metadata</title>
+      <link>https://riesal.github.io/2016/05/get-the-aws-ec2-instance-metadata/</link>
+      <pubDate>Thu, 21 Jul 2016 16:06:47 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2016/05/get-the-aws-ec2-instance-metadata/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Get the AWS EC2 instance metadata&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you are ready to send the first commands to your EC2 linux instance. Let’s check the EC2 instance metadata by hitting a specific AWS node only available from within the instance itself.&lt;br /&gt;
+&lt;span id=&#34;more-4512&#34;&gt;&lt;/span&gt;
+Instance metadata is data about your instance that you can use to configure or manage the running instance. You can list all instance metadata by issuing the following command:&lt;/p&gt;
+
+&lt;p&gt;curl -w &amp;ldquo;\n&amp;rdquo; &lt;a href=&#34;http://169.254.169.254/latest/meta-data/&#34;&gt;http://169.254.169.254/latest/meta-data/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://d2wxe3cu71edbr.cloudfront.net/media/uploads/lab-step/aws-ec2-api-7f27ea40-e554-4524-bc59-f2cfe515c93a.png&#34; alt=&#34;AWS EC2 metadata: services list&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can easily check the list of security groups attached to the instance, its ID, the hostname, or the ID of the used AMI. These commands are extremely useful when you want to automate the setup of new instances:&lt;/p&gt;
+
+&lt;p&gt;curl -w &amp;ldquo;\n&amp;rdquo; &lt;a href=&#34;http://169.254.169.254/latest/meta-data/security-groups&#34;&gt;http://169.254.169.254/latest/meta-data/security-groups&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;curl -w &amp;ldquo;\n&amp;rdquo; &lt;a href=&#34;http://169.254.169.254/latest/meta-data/ami-id&#34;&gt;http://169.254.169.254/latest/meta-data/ami-id&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;curl -w &amp;ldquo;\n&amp;rdquo; &lt;a href=&#34;http://169.254.169.254/latest/meta-data/hostname&#34;&gt;http://169.254.169.254/latest/meta-data/hostname&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;curl -w &amp;ldquo;\n&amp;rdquo; &lt;a href=&#34;http://169.254.169.254/latest/meta-data/instance-id&#34;&gt;http://169.254.169.254/latest/meta-data/instance-id&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;curl -w &amp;ldquo;\n&amp;rdquo; &lt;a href=&#34;http://169.254.169.254/latest/meta-data/instance-type&#34;&gt;http://169.254.169.254/latest/meta-data/instance-type&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://d2wxe3cu71edbr.cloudfront.net/media/uploads/lab-step/aws-ec2-api-2-225b554d-924d-457b-a62f-3bf8f60ae329.png&#34; alt=&#34;AWS EC2 metadata&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, you can also get the public key of the attached Keypair using the public-keys metadata:&lt;/p&gt;
+
+&lt;p&gt;curl -w &amp;ldquo;\n&amp;rdquo; &lt;a href=&#34;http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key&#34;&gt;http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://d2wxe3cu71edbr.cloudfront.net/media/uploads/lab-step/aws-ec2-api-3-d6e78feb-dcb7-4dea-98fb-0f2b7423b4ef.png&#34; alt=&#34;AWS EC2 metadata&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

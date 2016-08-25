@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Tutorial on Muhammad Fahrizal Rahman </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://riesal.github.io/categories/tutorial/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Thu, 13 Aug 2015 09:07:42 &#43;0000</updated>
+    
+    <item>
+      <title>Easy ways to create a sitemap</title>
+      <link>https://riesal.github.io/2015/08/easy-ways-to-create-a-sitemap/</link>
+      <pubDate>Thu, 13 Aug 2015 09:07:42 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2015/08/easy-ways-to-create-a-sitemap/</guid>
+      <description>
+
+&lt;h3 id=&#34;what-is-a-sitemap&#34;&gt;What is a sitemap?&lt;/h3&gt;
+
+&lt;p&gt;A sitemap is a document that lists all URLs of your website that you would like crawled by a search engine. Most often, this document gives additional details such as the date a page was last modified, how frequently a page may change, and whether the page should be given priority over others, I will show you all the easy ways to create a sitemap..&lt;/p&gt;
+
+&lt;h3 id=&#34;why-do-i-need-a-sitemap&#34;&gt;Why do I need a sitemap?&lt;/h3&gt;
+
+&lt;p&gt;We’ve all become accustomed to using a search engine, probably daily. We often “Google” our questions throughout the day. Sitemaps are important because they tell search engines what pages are available for crawling on the website. They help search engines navigate your website and with this, your content is indexed.&lt;/p&gt;
+
+&lt;p&gt;You may be wondering how sitemaps work, since it is kind of an abstract concept. Think of it this way, your website is a building, and the sitemap is the blueprint that explains where all the parts of the structure are. An important addition to any site, they are easy to create and once they are set up, do not require a lot of maintenance.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-do-the-search-engines-find-the-sitemap&#34;&gt;How do the search engines find the sitemap?&lt;/h3&gt;
+
+&lt;p&gt;Once your sitemap is set up, search engines don’t automatically find it. To have your site indexed, a submittal process is required. The process is easy, and this can be accomplished in just a few simple steps. There are others, but the two major search engines to start with are Google and Bing. Easy ways to create a sitemap, once you have your sitemap ready, you can do this by setting up a &lt;a href=&#34;https://www.google.com/webmasters/tools/&#34; target=&#34;_blank&#34;&gt;Google Webmaster Tools&lt;/a&gt; and a &lt;a href=&#34;http://www.bing.com/toolbox/webmaster&#34; target=&#34;_blank&#34;&gt;Bing Webmaster Tools&lt;/a&gt; account. After the accounts are setup, you will be able to walk through step by step to get your sitemap submitted.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-to-create-a-sitemap&#34;&gt;&lt;strong&gt;How to create a sitemap&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;h4 id=&#34;small-website-solution-manual-option&#34;&gt;&lt;strong&gt;Small website solution manual option&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.xml-sitemaps.com/&#34; target=&#34;_blank&#34;&gt;XML-Sitemaps&lt;/a&gt; is a tool that will generate a sitemap for you. Currently, it will generate up to 500 pages. This option works best for small websites that are not updated frequently since it requires manual updating each time a page is added or removed. It’s worth mentioning in case your preference is to be up and running quickly and don’t mind doing the manual work of creating and moving the sitemap file. If you want to create something fast, or are just curious about what a sitemap looks like, it is easy to generate one. All you have to do is enter your URL and it takes care of the rest.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;aligncenter size-full wp-image-12277&#34; src=&#34;http://getflywheel.com/wp-content/uploads/2015/08/xml-sitemap-generator.jpg&#34; alt=&#34;xml-sitemap-generator&#34; width=&#34;1022&#34; height=&#34;272&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the generator has created your sitemap, you need to upload it to the root of your domain; the URL will be something like www.yoursite.com/sitemap.xml.&lt;/p&gt;
+
+&lt;h4 id=&#34;wordpress-specific-solutions-for-sitemaps&#34;&gt;WordPress specific solutions for sitemaps&lt;/h4&gt;
+
+&lt;p&gt;We all know how awesome WordPress is and that there are many great plugins available. Although there is nothing wrong with manually creating a sitemap, it can be a pain if you have to do this all of the time. With sitemap specific plugins, there is no need to manually create your own. Although there are many options (and opinions!) out there, these two have been chosen as great options for an automatic solution to get you up and running.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Yoast’s WordPress SEO&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You may already be using WordPress SEO by Yoast. If so, it does have a sitemap generator built right into it. It is very easy to setup.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;aligncenter size-full wp-image-12278&#34; src=&#34;http://getflywheel.com/wp-content/uploads/2015/08/yoast-plugin.jpg&#34; alt=&#34;yoast-plugin&#34; width=&#34;1022&#34; height=&#34;1266&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You will see an extensive option list that can be customized to your liking. If there are specific post types and taxonomies that you would like excluded, that is an option. If you have a very large site, Yoast has the capability to only include the specified number of URL’s listed on a page, which is less strain on your server.&lt;/p&gt;
+
+&lt;p&gt;The nice thing is, this plugin takes care of the generating and publishing of the sitemap. It will be found at &lt;a href=&#34;http://www.yoursite.com/sitemap_index.xml&#34;&gt;http://www.yoursite.com/sitemap_index.xml&lt;/a&gt;. The main sitemap page lists a sitemap for each post type. It lists all the URLs that you would like crawled.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Google XML Sitemap&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://wordpress.org/plugins/google-sitemap-generator/&#34; target=&#34;_blank&#34;&gt;Google XML Sitemaps&lt;/a&gt; is another great option. Google XML Sitemaps gives you extra information like details of when your sitemap was last generated, and it also has the capability to calculate the priority for each post by looking at the number of comments.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#34;aligncenter size-full wp-image-12275&#34; src=&#34;http://getflywheel.com/wp-content/uploads/2015/08/google-xml-sitemaps.jpg&#34; alt=&#34;google-xml-sitemaps&#34; width=&#34;1022&#34; height=&#34;653&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It does require a bit of setup to get up and running. The main settings page has options so you can create the perfect sitemap. Most of the configuration settings can be modified on this same page. Like Yoast, you can easily choose what to exclude. In addition to choosing the number of posts that are listed, you can increase the memory limit and execution time for the sitemap creation process, making this a flexible option.&lt;/p&gt;
+
+&lt;p&gt;This plugin will publish and update the sitemap automatically, so once things are set up, you do not have to do anything else, that easy ways to create a sitemap by default, this is the path to the sitemap: &lt;a href=&#34;http://www.yoursite.com/index.xml&#34;&gt;http://www.yoursite.com/index.xml&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s a good practice to have a sitemap, and as an extra motivator, it’s worth mentioning the fact that there are SEO benefits to having one. On your journey to sitemapping, you will find that there are easy options for creating a sitemap, including great WordPress specific plugins that update and grow along with your site.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Keep checking the &lt;a href=&#34;http://blog.intispace.com/&#34;&gt;intispace blog&lt;/a&gt; for more upcoming tips on starting your own business.&lt;/strong&gt; Also, send us a tweet &lt;a href=&#34;https://twitter.com/intispace&#34;&gt;@intispace&lt;/a&gt; with your own ideas on what makes a great domain name!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This article was brought to you by Intispace Netmedia, for scalable wordpress hosting visit our site here &lt;strong&gt;&lt;a href=&#34;https://intispace.com/&#34;&gt;www.intispace.com&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Few Tips For Your New Website</title>
+      <link>https://riesal.github.io/2015/07/few-tips-for-your-new-website/</link>
+      <pubDate>Fri, 31 Jul 2015 10:00:06 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2015/07/few-tips-for-your-new-website/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Before you launch your brand new website, make sure you take these quick tips into account.&lt;/strong&gt;&lt;span id=&#34;more-1737&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Few tips for your new website, creating a new website can be a lot of work. Between coming up with a design, building the site (or hiring a developer) and marketing the new idea, you’re putting in several hours to ensure that your site will draw in new visitors while keeping the current ones engaged.&lt;/p&gt;
+
+&lt;p&gt;Make sure you hit these targets  to increase customer engagement with your new website:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Mobile-friendly design.&lt;/strong&gt; 64% of Americans now have a smartphone, and most of them are using them to access the internet on a daily basis. Make sure your site is easily accessible and navigable from a mobile device. Not only is it important to create a smooth browsing experience for mobile users, Google now actually penalizes sites that aren’t deemed “mobile friendly”. Make sure mobile-friendly design is at the top of your list. We suggest looking at responsive web design for best results.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Call to action.&lt;/strong&gt; You don’t simply want your visitors going to your site, admiring the good design, and leaving. You want them to take action. Make sure you include a strong Call To Action (CTA) on your homepage. Make your CTA obvious and simple to follow. Your visitors should find it easy to sign up for your newsletter, make a purchase or give you feedback.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Improved usability.&lt;/strong&gt; Your site should be visually appealing, but that counts for nothing if your visitors can’t find their way around your site. Usability is key when trying to keep your visitors on your site. To improve usability, make sure you consider your audience when designing your site. Will they know where to click next? Are you answering their questions? Will they be frustrated with anything on the site? Your visitors will leave right away if they’re confused about your site’s layout.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Less is more.&lt;/strong&gt; Don’t go overboard with excessive design. Think about usability first, and then make your site appealing to the eye. By using the right typography for your brand, tying in a consistent color scheme and including images that send the right message, you’re on your way to an effective, user-friendly design.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Informative ‘About Us’ page.&lt;/strong&gt; Let your visitors know exactly who you are and what kind of values your business has. An ‘&lt;a href=&#34;http://blog.intispace.com/2015/05/what-does-your-about-us-page-really-say/&#34;&gt;About Us’ page should be informative and honest&lt;/a&gt;; people love seeing what really lies at the core of a company. If you’re a well-established business, display some of your accomplishments throughout the years. If you’re an up-and-coming startup, outline some of your goals for the future.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compelling copy.&lt;/strong&gt; This goes back to finding your audience and talking directly to them. Now that someone has arrived at your site, pitch them your message! Copy should sound convincing, but you never want to come off as too salesy or intrusive. Be conversational and provide the answers that they’re searching for (that’s why most people are online – to get answers!).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;When in doubt, A/B test!&lt;/strong&gt; Sometimes there’s no way of knowing which design will perform best. When launching your site, try a few different designs and see which one produces optimal results. This way, there is no doubting which design will work better for your site.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Speed up your site.&lt;/strong&gt; There’s almost nothing that will drive away your visitors more quickly than &lt;a href=&#34;http://blog.intispace.com/2015/05/how-to-measure-your-websites-page-load-time/&#34;&gt;slow loading times&lt;/a&gt;. In fact, 40% of people say they will leave a page if it takes longer than 3 seconds to load. Check out this blog post to see how you can easily speed up your website.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Keep checking the &lt;a href=&#34;http://blog.intispace.com/&#34;&gt;intispace blog&lt;/a&gt; for more upcoming tips on starting your own business.&lt;/strong&gt; Also, send us a tweet &lt;a href=&#34;https://twitter.com/intispace&#34;&gt;@intispace&lt;/a&gt; with your own ideas on what makes a great domain name!&lt;/p&gt;
+
+&lt;p&gt;This article was brought to you by Intispace Netmedia, for scalable wordpress hosting visit our site here &lt;a href=&#34;https://intispace.com/&#34;&gt;www.intispace.com&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Say Goodbye to SSL Version 3.0</title>
+      <link>https://riesal.github.io/2015/05/say-goodbye-to-ssl-version-3-0/</link>
+      <pubDate>Thu, 21 May 2015 12:44:21 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2015/05/say-goodbye-to-ssl-version-3-0/</guid>
+      <description>
+
+&lt;p&gt;It is no secret that securing your client’s data is an ongoing process and not something that you can simply install on a server/platform. That is why security solutions and protocols evolve all the time and developers frequently release new versions. The two cryptographic protocols that provide communication security over the Internet are TLS and SSL. The latest version of Secure Sockets Layer (SSL version 3.0) is the predecessor of TLS and is nearly 15 years old. So it was only a matter of time for someone to find the next big issue related to the SSL protocol. Yesterday Bodo Möller from the Google Security Team wrote &lt;a href=&#34;http://googleonlinesecurity.blogspot.co.uk/2014/10/this-poodle-bites-exploiting-ssl-30.html&#34; target=&#34;_blank&#34;&gt;a blog post&lt;/a&gt; about a new vulnerability in the design of SSL version 3.0. The vulnerability allows attackers to calculate the plain text of secure connections.&lt;/p&gt;
+
+&lt;p&gt;&lt;span id=&#34;more-7162&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;possible-fixes&#34;&gt;Possible Fixes:&lt;/h3&gt;
+
+&lt;p&gt;There are two ways to protect yourself. The first and best way to mitigate this problem is to completely disable SSL version 3.0 on all of your servers and also remove SSL 3.0 support from all client products. For example, Google officially announced in the same blog post that in the coming months they will remove SSL version 3.0 support from all of their client products (including the Google Chrome browser). Cloudflare and Sucuri already stopped supporting it. All other major browsers will also disable SSLv3 by default (Firefox version 34 will be released on Nov 25).&lt;/p&gt;
+
+&lt;p&gt;The second solution is to support &lt;a href=&#34;https://tools.ietf.org/html/draft-ietf-tls-downgrade-scsv-00&#34; target=&#34;_blank&#34;&gt;TLS_FALLBACK_SCSV&lt;/a&gt;. This is a solution which prevents attackers from tricking browsers to use the old SSLv3 protocol instead of the TLS protocol. However, this solution is difficult to implement (many people will need to manually compile custom version of openssl) and it is only a new patch which solves this issue but does not provide any guarantees that SSLv3 won’t become vulnerable again a week from now.&lt;/p&gt;
+
+&lt;h3 id=&#34;our-solution&#34;&gt;Our Solution:&lt;/h3&gt;
+
+&lt;p&gt;Based on a detailed analysis of our network and the traffic towards our servers we decided to completely remove SSL version 3.0 support. As a matter of fact, a big portion of our servers have already been configured to support only the TLS encryption protocol and we’re in the process of reconfiguring all machines that are part of our infrastructure.&lt;/p&gt;
+
+&lt;h3 id=&#34;possible-issues&#34;&gt;Possible Issues:&lt;/h3&gt;
+
+&lt;p&gt;We know that some web applications still use SSLv3. Let’s say that for example a developer has decided to configure his/her PHP app to use SSLv3 via the CURLOPT_SSLVERSION option. Unfortunately, if such application connects to our servers, the connection will not be established and the developer will need to patch the code of the app. Our analysis shows that less than 0.05% of all traffic towards our servers is SSLv3. Thus, we do not expect such issues to occur, but we still encourage our customers to contact us via our Helpdesk if they notice any SSL-related issues.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Optimizing Jetpack!</title>
+      <link>https://riesal.github.io/2015/05/optimizing-jetpack/</link>
+      <pubDate>Thu, 21 May 2015 12:35:10 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2015/05/optimizing-jetpack/</guid>
+      <description>&lt;div class=&#34;grid-col span12&#34;&gt;
+  Jetpack remains a polarizing plugin amongst developers so it’s not often discussed on developer-oriented blogs. The plugin has a history filled with bloat, slowness, and conflicts with other plugins. Admittedly, I myself have a love/hate relationship with it.
+&lt;/div&gt;
+
+&lt;div class=&#34;grid-col span12&#34;&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;grid-col span12&#34;&gt;
+  However, recently, it’s been improved so much that I feel comfortable recommending it for some users. It’s now truly modularized, allowing complete control over which features are activated, and much more stable. My biggest pet peeve will always be the way you have to connect to WordPress.com to use it. I understand all the technical reasons for that, but it’s a terrible user experience that is very confusing (especially for novice WordPress users).
+&lt;/div&gt;
+
+&lt;div class=&#34;grid-col span7&#34;&gt;
+  &lt;div class=&#34;post-content&#34;&gt;
+    &lt;p&gt;
+      With all that said, why is Optimizing Jetpack making an appearance here? The fact is if you can get past the clunky activation, Jetpack offers a great suite of features for the average blogger. But, in keeping with the WordPress philosophy of “decisions not options”, as an end user, you don’t have many configuration settings compared to all the options you would get if you used a similar standalone plugin.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      Fortunately, the code has been sprinkled with actions and filters for developers. So, while Jetpack is generally marketed to entry-level end users, there are actually some nice Easter eggs for developers who want to customize things a little bit for their clients −I call them Easter eggs because the ability to customize Jetpack hasn’t really been highlighted or documented too much. There has yet to be a complete resource that documents all of filters and actions available (I’ll give just a few examples here), but you can dig through the code looking for add_filter and add_action to find more. The &lt;a href=&#34;https://github.com/Automattic/jetpack&#34;&gt;code can be found on GitHub&lt;/a&gt; for easy reading (and if you want to contribute).
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      This article assumes you have some experience with development or at least are not afraid to work with code, even if it’s just copy/pasting snippets (hey, we all start out like that!). Here’s just a handful of ways you can tweak Jetpack.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Ditch That WordPress.com Connection…&lt;br /&gt; &lt;/strong&gt;Optimizing Jetpack! …Well, almost. You can actually use Jetpack without connecting to WordPress.com, at least partially. Some of the modules will work fine without the connection whereas some will remain unavailable. This comes handy when you are working on a local installation or even a production site if you’re only using certain modules.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      Add the following to your wp-config.php file to use development mode:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;define( ‘JETPACK_DEV_DEBUG’, true);&lt;/pre&gt;
+    
+    &lt;h4&gt;
+      &lt;strong&gt;Customization Best Practices&lt;/strong&gt;
+    &lt;/h4&gt;
+    
+    &lt;p&gt;
+      Optimizing Jetpack! When customizing Jetpack, there are a couple of things to keep in mind:
+    &lt;/p&gt;
+    
+    &lt;ul&gt;
+      &lt;li&gt;
+        Your customizations will generally be achieved by writing your own functions, so make sure to use &lt;strong&gt;unique function names&lt;/strong&gt; to avoid collision with any other plugin. I’ll prefix all mine with ‘wtwlb’ (wtw for WebTrainingWheels, lb for my initials) in these examples.
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;ul&gt;
+      &lt;li&gt;
+        Customizations can either be done in your theme, the child theme’s functions.php and template files, or via a ‘&lt;a href=&#34;https://css-tricks.com/wordpress-functionality-plugins/&#34;&gt;functionality plugin&lt;/a&gt;’. This is a simple plugin that contains anything you would otherwise paste in functions.php and it is advantageous because it’s theme-independent. If you plan on using the Jetpack mobile theme and customizing it, you will need to do it this way.
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Customize The Sharing Module&lt;br /&gt; &lt;/strong&gt;The sharing module in Jetpack is popular as it’s a pain-free way to add the most popular social share buttons to your content. Yet there are a couple of limitations.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Change Button Placement&lt;br /&gt; &lt;/strong&gt;By default, Jetpack lets you choose on what content (posts, pages, homepage, etc.) you want the buttons to appear, but it automatically places the buttons at the bottom of the content. A common request is to add the buttons at the top as well as (or instead of) at the bottom. This is really easy to do.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      The icons are placed using a filter on the WordPress tags for the_content and the _excerpt:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;add_filter( ‘the_content’, ‘sharing_display’, 19 );
+ add_filter( ‘the_excerpt’, ‘sharing_display’, 19 );&lt;/pre&gt;
+    
+    &lt;p&gt;
+      Removing either of those placements would be a matter of writing a small function to remove the appropriate filter. To remove it from the_content, and, therefore, from the bottom of the post, for example, the below would work:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;function wtwlb_remove_share() {
+ remove_filter (‘the_content’, ‘sharing_display’, 19 ); }
+ add_action (‘loop_start’, ‘wtwlb_remove_share’);&lt;/pre&gt;
+    
+    &lt;p&gt;
+      Then you can use the following in your functionality plugin to place the buttons at the top of the post:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;function wtwlb_move_jpshare( $content = ” ) {
+ if ( function_exists( ‘sharing_display’ ) ) {
+ return sharing_display() . $content;
+ }
+ else {&lt;/pre&gt;
+    
+    &lt;pre&gt;return $content;
+ }
+ }
+ add_filter( ‘the_content’, ‘wtwlb_move_jpshare’, 19 );&lt;/pre&gt;
+    
+    &lt;p&gt;
+      If you want to manually place the buttons elsewhere in your custom theme or child theme’s template files, you can use the following wherever you want the buttons to appear:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;if ( function_exists( ‘sharing_display’ ) ) {
+ sharing_display( ”, true );
+ }&lt;/pre&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Remove the Counter&lt;br /&gt; &lt;/strong&gt;Optimizing Jetpack! By default, Jetpack will show the sharing counts on the buttons. If you’d like to prevent that, you can do so with one line:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;add_filter( ‘jetpack_sharing_counts’, ‘__return_false’ );&lt;/pre&gt;
+    
+    &lt;p&gt;
+      &lt;img class=&#34;alignnone wp-image-14063&#34; src=&#34;http://s1.mt-cdn.net/blog/wp-content/uploads/2015/05/markuppicture.png&#34; alt=&#34;markuppicture&#34; width=&#34;700&#34; height=&#34;314&#34; /&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Style The Icons&lt;br /&gt; &lt;/strong&gt;Optimizing Jetpack! There’s no fancy trick to styling Jetpack sharing buttons. You can radically change the look with pure CSS in your child theme. The icons themselves are Genericons (an icon font), making them easy to manipulate the color, size, etc.
+    &lt;/p&gt;
+    
+    &lt;h4&gt;
+       &lt;strong&gt;Customize Related Posts&lt;/strong&gt;
+    &lt;/h4&gt;
+    
+    &lt;p&gt;
+      Optimizing Jetpack! Showing related content is a great feature to keep readers on your site, but some WordPress plugins that do this can be slow and inefficient. Jetpack offloads the intensive processing work to its WordPress.com servers, allowing for a nimble Related Posts feature. By default, you only have two options to customize:
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;img class=&#34;alignnone wp-image-14064&#34; src=&#34;http://s1.mt-cdn.net/blog/wp-content/uploads/2015/05/customizerelatedposts.png&#34; alt=&#34;customizerelatedposts&#34; width=&#34;700&#34; height=&#34;295&#34; /&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      So, here are a few handy tweaks you can make:
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Customize the Number of Posts&lt;br /&gt; &lt;/strong&gt;By default, the module displays three posts. You can change that with the function below. For example, this will set the number of posts to four:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;function wtwlb_jpmore_related_posts( $options ) {
+ $options[‘size’] = 4;
+ return $options;
+ }
+ add_filter( ‘jetpack_relatedposts_filter_options’, ‘wtwlb_jpmore_related_posts’ );&lt;/pre&gt;
+    
+    &lt;p&gt;
+      Since I want four posts in a row and the module style is based on three, I’ll need to tweak the CSS to accommodate. Here I set the width of each to 25% instead of 33%:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post {
+ width: 25%;
+ }&lt;/pre&gt;
+    
+    &lt;pre&gt;div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post:nth-child(3n+4),
+ div#jp-relatedposts div.jp-relatedposts-items-visual .jp-relatedposts-post:nth-child(3n+4) {
+ clear: none;
+ }&lt;/pre&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Change the Headline&lt;br /&gt; &lt;/strong&gt;The default headline for the related posts section is simply “Related”. In this snippet, we’ll change that to “Recommended Posts”:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;function wtwlb_related_posts_headline( $headline ) {
+ $headline = sprintf(
+ ‘&amp;lt;h3 class=”jp-relatedposts-headline”&amp;gt;&amp;lt;em&amp;gt;%s&amp;lt;/em&amp;gt;&amp;lt;/h3&amp;gt;’,
+ esc_html( ‘Recommended Posts’ )
+ );
+ return $headline;
+ }
+ add_filter( ‘jetpack_relatedposts_filter_headline’, ‘wtwlb_related_posts_headline’ );&lt;/pre&gt;
+    
+    &lt;p&gt;
+      This is how it looks by default:
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;img class=&#34;alignnone wp-image-14069&#34; src=&#34;http://s1.mt-cdn.net/blog/wp-content/uploads/2015/05/headlinechange.png&#34; alt=&#34;headlinechange&#34; width=&#34;700&#34; height=&#34;552&#34; /&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      And with the two changes above:
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;img class=&#34;alignnone wp-image-14070&#34; src=&#34;http://s1.mt-cdn.net/blog/wp-content/uploads/2015/05/twochangesheadline.png&#34; alt=&#34;twochangesheadline&#34; width=&#34;700&#34; height=&#34;294&#34; /&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Change Thumbnail Size&lt;br /&gt; &lt;/strong&gt;If you’d like to change the dimensions of the thumbnails that go with each related post, you can use the following. In this example, I’m making the images square, i.e. 125 x125:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;function wtwlb_jp_image_size ( $thumbnail_size ) {
+ $thumbnail_size[‘width’] = 125;
+ $thumbnail_size[‘height’] = 125;
+ return $thumbnail_size;
+ }
+ add_filter( ‘jetpack_relatedposts_filter_thumbnail_size’, ‘wtwlb_jp_image_size’ );&lt;/pre&gt;
+    
+    &lt;p&gt;
+      You can find a slew of other tweaks like this here: &lt;a href=&#34;http://jetpack.me/support/related-posts/customize-related-posts/&#34;&gt;http://jetpack.me/support/related-posts/customize-related-posts/&lt;/a&gt;
+    &lt;/p&gt;
+    
+    &lt;h4&gt;
+      &lt;strong&gt;Customize The Mobile Theme&lt;/strong&gt;
+    &lt;/h4&gt;
+    
+    &lt;p&gt;
+      The mobile theme included in Jetpack is clean and functional, but, again, a little short on options. It’s not going to look like your desktop theme right out of the box, but it can be styled quite easily.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Create Custom Mobile Styles&lt;br /&gt; &lt;/strong&gt;There are a couple options to apply styling to the mobile theme. Remember, because it’s a separate theme, you cannot add your styling to your regular desktop theme style.css because that’s not going to be loaded on mobile.
+    &lt;/p&gt;
+    
+    &lt;ol&gt;
+      &lt;li&gt;
+        For an easy way to include custom CSS, I like to use a plugin called &lt;a href=&#34;https://wordpress.org/plugins/simple-custom-css/&#34;&gt;Simple Custom CSS&lt;/a&gt;. It just provides a box for you to enter your CSS and have it apply regardless of the theme. It’s perfect for these sort of cases. To target styles specifically within the mobile theme, just make sure to use the class: .mobile-theme
+      &lt;/li&gt;
+      &lt;li&gt;
+        Create a separate style sheet and enqueue it. This could be particularly useful if you want to keep your custom CSS out of the dashboard where an over-zealous client might get their hands on it.
+      &lt;/li&gt;
+    &lt;/ol&gt;
+    
+    &lt;p&gt;
+      Here’s the code you’d need to do that:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;// Check if we are on mobile
+ function jetpackme_is_mobile() {&lt;/pre&gt;
+    
+    &lt;pre&gt;// Are Jetpack Mobile functions available?
+ if ( ! function_exists( ‘jetpack_is_mobile’ ) )&lt;/pre&gt;
+    
+    &lt;pre&gt;return false;&lt;/pre&gt;
+    
+    &lt;pre&gt;// Is Mobile theme showing?
+ if ( isset( $_COOKIE[‘akm_mobile’] ) &amp;&amp; $_COOKIE[‘akm_mobile’] == ‘false’ )
+ return false;&lt;/pre&gt;
+    
+    &lt;pre&gt;return jetpack_is_mobile();
+ }&lt;/pre&gt;
+    
+    &lt;pre&gt;// On mobile? Enqueue your custom style sheet
+ if ( jetpackme_is_mobile() ) {
+ add_action( ‘wp_enqueue_scripts’, ‘wtwlb_jetpackme_mobile_css’ );
+ }&lt;/pre&gt;
+    
+    &lt;pre&gt;// Build the function
+ function wtwlb_jetpackme_mobile_css() {&lt;/pre&gt;
+    
+    &lt;pre&gt;wp_enqueue_style( ‘mobile-style’, plugins_url( ‘mobile-style.css’, __FILE__ ), array(‘style’), ‘1’, ‘all’ );
+ }&lt;/pre&gt;
+    
+    &lt;p&gt;
+      In this case, I have created a mobile specific style sheet called mobile-style.css, which will be saved in the same folder as my functionality plugin.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &lt;strong&gt;Mobile Specific Widgets&lt;br /&gt; &lt;/strong&gt;Optimizing Jetpack! Presently, there isn’t an elegant way to have mobile-specific widgets using the Jetpack mobile theme. But here’s a method that will work.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      By default, the mobile theme will look in your main theme for a sidebar registered with the ID: sidebar-1 and it will use that at the bottom of your mobile theme. If your theme does not have a sidebar with that ID, you won’t have any widgets unless you register one for this purpose.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      Assuming you do have that sidebar, by default all widgets in it will show on mobile. But if you want to control that and only show certain ones on mobile, you can use a plugin called &lt;a href=&#34;https://wordpress.org/plugins/widget-logic/&#34;&gt;Widget Logic&lt;/a&gt;. It gives you a field on each widget to specify conditions on which to show it. Here you can tap into a cool Jetpack function to designate the widget to show up only on mobile. On the widgets you want to show on mobile devices, enter:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;jetpack_is_mobile()&lt;/pre&gt;
+    
+    &lt;p&gt;
+      For those widgets you only want on desktop, enter:
+    &lt;/p&gt;
+    
+    &lt;pre&gt;!jetpack_is_mobile()&lt;/pre&gt;
+    
+    &lt;p&gt;
+      &lt;img class=&#34;alignnone wp-image-14072&#34; src=&#34;http://s2.mt-cdn.net/blog/wp-content/uploads/2015/05/jetpackismobile.png&#34; alt=&#34;jetpackismobile&#34; width=&#34;700&#34; height=&#34;738&#34; /&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      &amp;nbsp;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      Further reading:&lt;br /&gt; &lt;a href=&#34;https://github.com/jeremyfelt/Hooks-in-Jetpack&#34;&gt;A partial list of hooks in Jetpack&lt;br /&gt; &lt;/a&gt;&lt;a href=&#34;http://jetpack.me/support/&#34;&gt;Official Jetpack documentation&lt;br /&gt; &lt;/a&gt;&lt;a href=&#34;http://jetpack.me/support/jetpack-for-developers/&#34;&gt;Jetpack developers’ page&lt;br /&gt; &lt;/a&gt;&lt;a href=&#34;http://jetpack.me/2013/06/27/customize-mobile-theme/&#34;&gt;Customizing the mobile theme&lt;/a&gt;
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+      Hopefully, this will entice you to dig deeper into the capabilities of Jetpack. Have you done something cool with Jetpack? Share it in the comments!
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

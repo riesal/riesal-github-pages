@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Benefit Platform Improvement on Muhammad Fahrizal Rahman </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://riesal.github.io/tags/benefit-platform-improvement/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Sun, 24 May 2015 13:43:13 &#43;0000</updated>
+    
+    <item>
+      <title>Intispace Platform Improvements, And How You Benefit</title>
+      <link>https://riesal.github.io/2015/05/intispace-platform-improvements-and-how-you-benefit/</link>
+      <pubDate>Sun, 24 May 2015 13:43:13 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2015/05/intispace-platform-improvements-and-how-you-benefit/</guid>
+      <description>
+
+&lt;p&gt;One of our goals here at Intispace is to continue innovating and improving our platform so you can get the absolute most out of it. And late last year and early this year we made a host of intispace platform improvements to our platform that give all Intispace customers better performance, tighter security, and updated caching. Intispace Platform Improvements, And How You Benefit, Combined, these improvements result in faster, more reliable, and more secure WordPress sites.&lt;/p&gt;
+
+&lt;p&gt;Let’s take a quick look at some of our recent platform improvements and how you benefit from them as a Intispace customer:&lt;/p&gt;
+
+&lt;h2 id=&#34;performance&#34;&gt;Performance&lt;/h2&gt;
+
+&lt;p&gt;Intispace Platform Improvements, And How You Benefit. We’re in the process of updating our platform to PHP 5.5, Ubuntu 14.04, and MySQL 5.6. These upgrades individually deliver huge performance gains, and when combined they can account for nearly a 50 percent increase in speed for our customers. Thousands of our customers have already been moved into the new platform, and all new customers are on this platform already.  We continue to actively migrate customers, and we’ll send you an email as part of the migration process.&lt;/p&gt;
+
+&lt;p&gt;We have also improved our performance monitoring and our hotspot identification and now use it to actively drive performance improvements in our platform. Proactive performance monitoring helps us identify customers who may have performance issues. Our team digs in and finds the root cause of the issue and pushes the improvements upstream–into WordPress, plugins, or our platform, which benefits a larger set of customers and allows us to drive  improvements in the performance and scalability of third-party plugins. So far, this effort has resulted in:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Improvements to the way we do object caching&lt;/li&gt;
+&lt;li&gt;Improvements to our baseline database configuration and schema&lt;/li&gt;
+&lt;li&gt;Several changes in third-party plugins to make them operate better at scale&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;security&#34;&gt;Security&lt;/h2&gt;
+
+&lt;p&gt;We continue to improve our malicious traffic detection and blocking (web application firewall), which reduces overall server load and protects your WordPress sites from attackers. The attacks that we block include:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Exploits against several plugins, such as the RevSlider vulnerability, that attempt unauthorized downloads of php files, configuration files, /etc/passwd, and more.&lt;/li&gt;
+&lt;li&gt;Attempts to gain unauthorized access to wp-admin.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This improvement was put into action recently and complete well before the public announcement.&lt;/p&gt;
+
+&lt;h2 id=&#34;caching&#34;&gt;Caching&lt;/h2&gt;
+
+&lt;p&gt;We’ve also improved our caching for mobile sites by updating how our platform handles mobile search engine bots. Previously, mobile-specific bots could be served cached versions of non-mobile-optimized pages. This is an important improvement for sites that serve different content to mobile users.&lt;/p&gt;
+
+&lt;p&gt;These updates, and the updates we’re currently working on, reaffirm our commitment to all Intispace customers that we’ll continuously innovate and work on ways to intispace platform improvements&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,185 @@
+    <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> Get the AWS EC2 instance metadata &middot; Muhammad Fahrizal Rahman </title>
+    
+    <link rel="stylesheet" type="text/css" href="https://riesal.github.io/css/uno.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://riesal.github.io/css/lightGallery.css" />
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link href="" rel="alternate" type="application/rss+xml" title="Muhammad Fahrizal Rahman" />
+    
+    <script src="https://riesal.github.io/js/jquery.min.js"></script>
+    <script src="https://riesal.github.io/js/main.min.js">
+    </script>
+</head>
+
+    <body>
+        <div id="scriptHeader">
+    <span class="mobile btn-mobile-menu">
+            <i class="fa fa-bars btn-mobile-menu__icon"></i>
+            <i class="fa fa-times btn-mobile-close__icon hidden"> </i>
+    </span>
+    <header class="
+        
+            panel-cover panel-cover--collapsed
+        "  style="background-image: url(/images/background-cover.jpg)" >
+    <div class="panel-main">
+        <div class="panel-main__inner panel-inverted">
+            <div class="panel-main__content"> 
+                <a href="https://riesal.github.io/" title="link to homepage for Muhammad Fahrizal Rahman"> <img src="https://eastlondonnews.co.uk/wp-content/uploads/2014/04/write-your-own-blog.jpg" width="80" alt="Muhammad Fahrizal Rahman logo" class="panel-cover__logo logo" /> </a> 
+                <h1 class="panel-cover__title panel-title">
+                    <a href="https://riesal.github.io/"  title="link to homepage for Muhammad Fahrizal Rahman">Muhammad Fahrizal Rahman</a>
+                </h1>
+                <hr class="panel-cover__divider" />
+                <p class="panel-cover__description">  just walk your talk and practice what you preach  </p>
+                <hr class="panel-cover__divider panel-cover__divider--secondary" />
+                <div class="navigation-wrapper">
+                    <nav class="cover-navigation cover-navigation--primary">
+                        <ul class="navigation">
+                            <li class="navigation__item"><a href="https://riesal.github.io#blog" title="link to Muhammad Fahrizal Rahman blog" class="blog-button">View Posts</a> </li></br>
+			    <li class="navigation__item"><a href="/post/" title="link to Muhammad Fahrizal Rahman archive" class="blog-button">Archive</a> </li></br>
+                            
+                       </ul>
+                    </nav> <nav class="cover-navigation navigation--social">
+    <ul class="navigation"> 
+        
+        <li class="navigation__item">
+            <a href="http://twitter.com/siriesal" title="@siriesal on Twitter"> <i class='fa fa-twitter'></i> <span class="label">Twitter</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="https://bitbucket.org/riesal" title="riesal on bitbucket"> <i class='fa fa-bitbucket'></i> <span class="label">Bitbucket</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="https://github.com/riesal" title="riesal on github"> <i class='fa fa-github'></i> <span class="label">Github</span> </a>
+        </li>  </br> 
+        
+        <li class="navigation__item">
+            <a href="http://www.flickr.com/photos/riesal/" title="riesal on flickr"> <i class='fa fa-flickr'></i> <span class="label">Flickr</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="https://www.linkedin.com/in/riesal" title="Linkedin"> <i class='fa fa-linkedin'></i> <span class="label">Linkedin</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="mailto:ask@intispace.com" title="Email ask@intispace.com"> <i class='fa fa-envelope-o'></i> <span class="label">Email</span> </a>
+        </li>  </ul>
+</nav>
+ </div>
+            </div>
+        </div>
+        <div class="panel-cover--overlay"></div>
+    </div>
+</header>
+</div>
+<noscript>
+    <style>
+        #scriptHeader {display:none;}
+        .navigation-wrapper{
+            display: block;
+            top: 0;
+        }
+    </style>
+
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+        <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+                <div class="panel-main__content"> 
+                    <a href="https://riesal.github.io/" title="link to homepage for Muhammad Fahrizal Rahman"> <img src="https://eastlondonnews.co.uk/wp-content/uploads/2014/04/write-your-own-blog.jpg" width="80" alt="Muhammad Fahrizal Rahman logo" class="panel-cover__logo logo" /> </a> 
+                    <h1 class="panel-cover__title panel-title">
+                        <a href="https://riesal.github.io/"  title="link to homepage for Muhammad Fahrizal Rahman">Muhammad Fahrizal Rahman</a>
+                    </h1>
+                    <hr class="panel-cover__divider" />
+                    <p class="panel-cover__description">  just walk your talk and practice what you preach  </p>
+                    <hr class="panel-cover__divider panel-cover__divider--secondary" />
+                    <div class="navigation-wrapper">
+                        <nav class="cover-navigation cover-navigation--primary">
+                            <ul class="navigation">
+                                <li class="navigation__item"><a href="https://riesal.github.io/#blog" title="link to Muhammad Fahrizal Rahman blog" class="blog-button">Blog</a> </li></br>
+                                <li class="navigation__item"><a href="/pages/cv" title="link to my CV " class="blog-button">CV</a> </li></br> 
+				
+                           </ul>
+                        </nav> <nav class="cover-navigation navigation--social">
+    <ul class="navigation"> 
+        
+        <li class="navigation__item">
+            <a href="http://twitter.com/siriesal" title="@siriesal on Twitter"> <i class='fa fa-twitter'></i> <span class="label">Twitter</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="https://bitbucket.org/riesal" title="riesal on bitbucket"> <i class='fa fa-bitbucket'></i> <span class="label">Bitbucket</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="https://github.com/riesal" title="riesal on github"> <i class='fa fa-github'></i> <span class="label">Github</span> </a>
+        </li>  </br> 
+        
+        <li class="navigation__item">
+            <a href="http://www.flickr.com/photos/riesal/" title="riesal on flickr"> <i class='fa fa-flickr'></i> <span class="label">Flickr</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="https://www.linkedin.com/in/riesal" title="Linkedin"> <i class='fa fa-linkedin'></i> <span class="label">Linkedin</span> </a>
+        </li>  
+        
+        <li class="navigation__item">
+            <a href="mailto:ask@intispace.com" title="Email ask@intispace.com"> <i class='fa fa-envelope-o'></i> <span class="label">Email</span> </a>
+        </li>  </ul>
+</nav>
+ </div>
+                </div>
+            </div>
+            <div class="panel-cover--overlay"></div>
+        </div>
+    </header>
+</noscript>
+
+        <div class="content-wrapper">
+            <div class="content-wrapper__inner">
+                <div class="post">
+                    <h1>Get the AWS EC2 instance metadata</h1>
+                    <span class="post-date">Thu, Jul 21, 2016</span>
+                    <p><strong>Get the AWS EC2 instance metadata</strong></p>
+
+<p>Now you are ready to send the first commands to your EC2 linux instance. Let’s check the EC2 instance metadata by hitting a specific AWS node only available from within the instance itself.<br />
+<span id="more-4512"></span>
+Instance metadata is data about your instance that you can use to configure or manage the running instance. You can list all instance metadata by issuing the following command:</p>
+
+<p>curl -w &ldquo;\n&rdquo; <a href="http://169.254.169.254/latest/meta-data/">http://169.254.169.254/latest/meta-data/</a></p>
+
+<p><img src="https://d2wxe3cu71edbr.cloudfront.net/media/uploads/lab-step/aws-ec2-api-7f27ea40-e554-4524-bc59-f2cfe515c93a.png" alt="AWS EC2 metadata: services list" /></p>
+
+<p>You can easily check the list of security groups attached to the instance, its ID, the hostname, or the ID of the used AMI. These commands are extremely useful when you want to automate the setup of new instances:</p>
+
+<p>curl -w &ldquo;\n&rdquo; <a href="http://169.254.169.254/latest/meta-data/security-groups">http://169.254.169.254/latest/meta-data/security-groups</a></p>
+
+<p>curl -w &ldquo;\n&rdquo; <a href="http://169.254.169.254/latest/meta-data/ami-id">http://169.254.169.254/latest/meta-data/ami-id</a></p>
+
+<p>curl -w &ldquo;\n&rdquo; <a href="http://169.254.169.254/latest/meta-data/hostname">http://169.254.169.254/latest/meta-data/hostname</a></p>
+
+<p>curl -w &ldquo;\n&rdquo; <a href="http://169.254.169.254/latest/meta-data/instance-id">http://169.254.169.254/latest/meta-data/instance-id</a></p>
+
+<p>curl -w &ldquo;\n&rdquo; <a href="http://169.254.169.254/latest/meta-data/instance-type">http://169.254.169.254/latest/meta-data/instance-type</a></p>
+
+<p><img src="https://d2wxe3cu71edbr.cloudfront.net/media/uploads/lab-step/aws-ec2-api-2-225b554d-924d-457b-a62f-3bf8f60ae329.png" alt="AWS EC2 metadata" /></p>
+
+<p>Finally, you can also get the public key of the attached Keypair using the public-keys metadata:</p>
+
+<p>curl -w &ldquo;\n&rdquo; <a href="http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key">http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key</a></p>
+
+<p><img src="https://d2wxe3cu71edbr.cloudfront.net/media/uploads/lab-step/aws-ec2-api-3-d6e78feb-dcb7-4dea-98fb-0f2b7423b4ef.png" alt="AWS EC2 metadata" /></p>
+
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Cloudwatch on Muhammad Fahrizal Rahman </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>https://riesal.github.io/tags/cloudwatch/</link>
+    <language>en-us</language>
+    
+    
+    <updated>Thu, 05 May 2016 16:31:10 &#43;0000</updated>
+    
+    <item>
+      <title>What is Amazon CloudWatch Logs and how does it work?</title>
+      <link>https://riesal.github.io/2016/05/amazon-cloudwatch-logs-work/</link>
+      <pubDate>Thu, 05 May 2016 16:31:10 &#43;0000</pubDate>
+      
+      <guid>https://riesal.github.io/2016/05/amazon-cloudwatch-logs-work/</guid>
+      <description>&lt;p&gt;Amazon CloudWatch monitors many AWS Services such as Elastic Compute Cloud (EC2), Relational Database Service, Elastic Block Storage and several others. CloudWatch alerts can identify events such as CPU spikes and latency issues. When used with AWS AutoScaling, administrators can seamlessly increase EC2 capacity as needed.&lt;/p&gt;
+
+&lt;p&gt;But since its inception, Amazon CloudWatch has had some limitations. One issue was that it lacked the ability to process huge amounts of custom log data that cloud platforms create, and to react to events in near real time. CloudWatch Logs, a new feature introduced at the AWS Summit in New York last month, is an extension of CloudWatch that admins can use to detect patterns and take action to resolve issues that arise.&lt;/p&gt;
+
+&lt;p&gt;With Amazon CloudWatch Logs, admins can capture any type of log &amp;#8212; from applications, on networks, from devices and so on &amp;#8212; and process it in Amazon Kinesis. From there, admins can then monitor application health.&lt;/p&gt;
+
+&lt;p&gt;Amazon CloudWatch Logs can do everything?&lt;/p&gt;
+
+&lt;p&gt;Logs provide an incredible window into problems that affect a cloud platform and act as a business intelligence resource. Many vendors, such as Loggly and Logentries, have carved out niches, offering tools that interpret AWS logs. These companies don&amp;#8217;t appear too threatened by CloudWatch Logs, as their services are already several generations ahead in their ability to process log data, provide intelligent alerting and help AWS customers identify trends.&lt;/p&gt;
+
+&lt;p&gt;With Amazon CloudWatch Logs, admins can analyze system logs to search for malicious login attempts over Secure Shell or pinpoint a botnet attempting a denial-of-service attack on the Web server. The monitoring tool looks for recurring IP patterns from your Web server logs and blocks access from attacking IP addresses. You also can query applications logs to identify customer usage patterns to improve the customer experience.&lt;/p&gt;
+
+&lt;p&gt;Amazon CloudWatch Logs can identify events that are unique to your specific platform &amp;#8212; not just the canned metrics that CloudWatch delivers. There are operating system logs, application logs, Web server logs or logs from any type of endpoint device.&lt;/p&gt;
+
+&lt;p&gt;And setting up CloudWatch Logs is fairly straightforward. Simply install and configure a CloudWatch Logs agent on an EC2 instance and access results through the Amazon CloudWatch console. Costs associated with Cloudwatch Logs are $0.50 per 1 GB of ingested log data per day, plus $0.03 per GB archived per month, in addition to the cost of Amazon Kinesis.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Keep checking the &lt;a href=&#34;http://blog.intispace.com/&#34;&gt;intispace blog&lt;/a&gt; for more upcoming tips on starting your own business.&lt;/strong&gt; Also, send us a tweet &lt;a href=&#34;https://twitter.com/intispace&#34;&gt;@intispace&lt;/a&gt; with your own ideas on what makes a great domain name!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;This article was brought to you by Intispace Netmedia, for scalable wordpress hosting visit our site here &lt;strong&gt;&lt;a href=&#34;https://intispace.com/&#34;&gt;www.intispace.com&lt;/a&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

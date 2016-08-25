@@ -1,0 +1,33 @@
+baseurl = "https://riesal.github.io"
+languageCode = "en-us"
+title = "Muhammad Fahrizal Rahman"
+theme = "hugo-uno"
+[permalinks]
+  post = "/:year/:month/:title/"
+[params]
+  SidebarRecentLimit = "2"
+contentdir = "content"
+publishdir = "public"
+builddrafts = false
+canonifyurls = true
+author = "Muhammad Fahrizal Rahman"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+
+[indexes]
+   category = "categories"
+   tag = "tags"
+[Params]
+  AuthorName = "Muhammad"
+  github = "riesal"
+  bitbucket = "riesal"
+  flickr = "riesal"
+  twitter = "siriesal"
+  email = "ask@intispace.com"
+  description = "just walk your talk and practice what you preach"
+  cv = "/pages/cv"
+  legalnotice = "/pages/legal-notice"
+  archive = "/post/"
+  muut = "fredrikloch"
+  linkedin = "riesal"
+  cover = "/images/background-cover.jpg"
+  logo = "https://eastlondonnews.co.uk/wp-content/uploads/2014/04/write-your-own-blog.jpg"
